@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+
+<html lang="en" class="has-background-dark">
+    
+    <head>
+        <!-- Meta tag -->
+		<meta charset="utf-8">
+        
+        <!-- Bulma CSS and Font Awesome style sheets -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+        <script src="index.js"></script>
+        
+        <!-- Title of tab -->
+		<title>Teresa Joseph</title>
+        
+        <div class="section" id="vue-target">
+        
+            <nav class="navbar is-warning" role="navigation">
+              <div id="navbar" class="navbar-menu">
+                  <div class="navbar-start">
+                      <a class="navbar-item" id="home_selection" @click="home_button">
+                          <span class="icon"><i class="fa fa-fw fa-home"></i></span>
+                          <span> Home</span>
+                      </a>
+
+                      <a class="navbar-item" id="exp_selection" @click="experience_button">
+                          Experience
+                      </a>
+
+                      <a class="navbar-item" id="skills_selection" @click="skills_button">
+                          Skills
+                      </a>
+
+                      <div class="navbar-item has-dropdown is-hoverable">
+                          <a class="navbar-link">
+                              Projects
+                          </a>
+                          <div class="navbar-dropdown">
+                              <a class="navbar-item" id="py_selection" @click="python_button">
+                                  Python
+                              </a>
+                              <a class="navbar-item" id="c_selection" @click="c_button">
+                                  C
+                              </a>
+                              <a class="navbar-item" id="html_selection" @click="html_button">
+                                  HTML
+                              </a>
+                              <a class="navbar-item" id="sql_selection" @click="sql_button">
+                                  SQL
+                              </a>
+                              <a class="navbar-item" id="tab_selection" @click="tableau_button">
+                                  Tableau
+                              </a>
+                              <a class="navbar-item" id="excel_selection" @click="excel_button">
+                                  Excel
+                              </a>
+                          </div>
+                      </div>
+
+                      <a class="navbar-item" id="cert_selection" @click="certificates_button">
+                          Certificates
+                      </a>
+                  </div>
+              </div>
+            </nav>
+        
+            <div v-if="home == true">
+                <!-- Title of page -->
+                <h1 class="title is-1 has-text-light has-text-centered fade-in"><br>Hi, I'm Teresa</h1>
+
+                <!-- Subtitle description -->
+                <h5 class="subtitle has-text-light has-text-centered">
+                    <br>Undergraduate at UCSC
+                    <br>Studying Computer Science &amp; Bioinformatics
+                    <br>Passionate about Data Science &amp; Analytics
+                    <br>Skilled in Python, C, HTML, &amp; SQL
+                </h5>
+
+                <div class="buttons is-centered">
+
+                    <a class="button is-warning has-text-centered" target=”_blank” href="https://www.linkedin.com/in/teresa-joseph/">
+                        <span class="icon"><i class="fa fa-fw fa-brands fa-linkedin"></i></span>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a class="button is-warning has-text-centered" target=”_blank” href="mailto:josephkteresa@gmail.com">
+                        <span class="icon"><i class="fa fa-fw fa-envelope"></i></span>
+                        <span>Email</span>
+                    </a>
+                    <a class="button is-warning has-text-centered" target=”_blank” href="https://github.com/tkj02">
+                        <span class="icon"><i class="fa fa-fw fa-brands fa-github"></i></span>
+                        <span>GitHub</span>
+                    </a>
+                    <a class="button is-warning has-text-centered" target=”_blank” href="https://public.tableau.com/app/profile/teresa.joseph">
+                        <span class="icon"><i class="fa fa-fw fa-table"></i></span>
+                        <span>Tableau</span>
+                    </a>
+                </div>
+
+                <img src="placeholder.png" class="center" style="display: block; margin-left: auto; margin-right: auto; width: 30%">
+
+                <h5 class="subtitle has-text-light has-text-centered">
+                    <br>This page is still under construction.
+                    <br>Check back another time!<br><br>
+                </h5>
+            </div>
+            
+            <div v-else-if="experience == true">
+                <h1 class="title is-1 has-text-light has-text-centered fade-in"><br>Experience</h1>
+                <h5 class="subtitle has-text-light has-text-centered">
+                    <br>
+                    <div class="columns is-mobile">
+                        <div class="column has-text-right">
+                            <p class="is-size-5 has-text-light">April 2023 - Present</p>
+                        </div>
+                        <div class="column">
+                            <p class="is-size-4 has-text-warning">Course Reader</p>
+                            <p class="is-size-5 has-text-light">Baskin School of Engineering</p>
+                            <p class="is-size-6 has-text-light">
+                                I was a reader for STAT 132 (Classical and<br>
+                                Bayesian Inference) and evaluated over 500<br>
+                                statistics problems and R programs.<br>
+                                I collaborated with my colleagues on creating<br>
+                                clear rubrics and strict deadlines every week.<br>
+                                I recently began working for CSE 102 (Analysis<br>
+                                of Algorithms), CSE 120 (Computer Architecture),<br>
+                                and STAT 80A (Gaming and Gambling) in which<br>
+                                I will complete similar tasks.
+                            </p>
+                        </div>
+                        <div class="column has-text-left">
+                             <p class="is-size-5 has-text-light">R, MIPS, Canvas</p>
+                        </div>
+                    </div>
+                    <div class="columns is-mobile">
+                        <div class="column has-text-right">
+                            <p class="is-size-5 has-text-light">July 2023 - September 2023</p>
+                        </div>
+                        <div class="column">
+                            <p class="is-size-4 has-text-warning">Research Assistant</p>
+                            <p class="is-size-5 has-text-light">UCSC Economics Department</p>
+                            <p class="is-size-6 has-text-light">
+                                I assessed and collected data from<br>
+                                banks around the world to further our<br>
+                                understanding of foreign exchange rates and<br>
+                                their impact on cash flow. I pulled and<br>
+                                organized data from financial reports and<br>
+                                frequently meet with other researchers<br>
+                                to discuss our findings. My focus so far<br>
+                                has been on Austrian, Canadian, Swedish,<br>
+                                Swiss, and Danish data.
+                            </p>
+                        </div>
+                        <div class="column has-text-left">
+                             <p class="is-size-5 has-text-light">Python, Excel</p>
+                        </div>
+                    </div>
+                    <div class="columns is-mobile">
+                        <div class="column has-text-right">
+                            <p class="is-size-5 has-text-light">January 2022 - March 2023</p>
+                        </div>
+                        <div class="column">
+                            <p class="is-size-4 has-text-warning">Python Course Tutor</p>
+                            <p class="is-size-5 has-text-light">Baskin School of Engineering</p>
+                            <p class="is-size-6 has-text-light">
+                                I conducted over 250 hours of one-on-one<br>
+                                tutoring sessions where I assisted<br>
+                                students by debugging their Python code,<br>
+                                explaining programming concepts, and<br>
+                                providing other recommendations/guidance.<br>
+                                I tracked progress on course mastery through<br>
+                                frequent follow-up discussions and had<br>
+                                a direct positive impact on several students.
+                            </p>
+                        </div>
+                        <div class="column has-text-left">
+                             <p class="is-size-5 has-text-light">Python, Canvas</p>
+                        </div>
+                    </div>
+                    <div class="columns is-mobile">
+                        <div class="column has-text-right">
+                            <p class="is-size-5 has-text-light">June 2022 - August 2022</p>
+                        </div>
+                        <div class="column">
+                            <p class="is-size-4 has-text-warning">Backend Developer Intern</p>
+                            <p class="is-size-5 has-text-light">SkyIT Services</p>
+                            <p class="is-size-6 has-text-light">
+                                I wrote, reviewed, and documented C# code<br>
+                                for the development of a mobile application<br>
+                                that would allow users to track their flights.<br>
+                                I collaborated with other developers in frequent<br>
+                                sprint meetings.
+                            </p>
+                        </div>
+                        <div class="column has-text-left">
+                             <p class="is-size-5 has-text-light">C#, ASP.NET Core, Excel</p>
+                        </div>
+                    </div>
+                    <div class="columns is-mobile">
+                        <div class="column has-text-right">
+                            <p class="is-size-5 has-text-light">September - December 2022, 2023</p>
+                        </div>
+                        <div class="column">
+                            <p class="is-size-4 has-text-warning">Peer Notetaker</p>
+                            <p class="is-size-5 has-text-light">UCSC Disability Resources Center</p>
+                            <p class="is-size-6 has-text-light">
+                                I created detailed study guides for<br>
+                                a Probability Theory course and an<br>
+                                Analysis of Algorithms course. I also<br>
+                                facilitated a few study sessions.
+                            </p>
+                        </div>
+                        <div class="column has-text-left">
+                             <p class="is-size-5 has-text-light">Google Suite</p>
+                        </div>
+                    </div>
+                </h5>
+            </div>
+            
+            <div v-else-if="skills == true">
+                <h1 class="title is-1 has-text-light has-text-centered fade-in"><br>Skills</h1>
+            </div>
+            
+            <div v-else-if="python == true">
+                <h1 class="title is-1 has-text-light has-text-centered fade-in"><br>Python Projects</h1>
+            </div>
+            
+            <div v-else-if="c == true">
+                <h1 class="title is-1 has-text-light has-text-centered fade-in"><br>C Projects</h1>
+            </div>
+            
+            <div v-else-if="html == true">
+                <h1 class="title is-1 has-text-light has-text-centered fade-in"><br>HTML Projects</h1>
+                <div class="column has-text-centered">
+                    <a class="is-size-4 has-text-warning has-text-centered" target=”_blank” href="https://github.com/tkj02/Nutrition/tree/main">
+                            <span>Nutrition Visualizer</span>
+                    </a>
+                    <p class="is-size-5 has-text-light">
+                        Course Project (2023)
+                    </p>
+                    <p class="is-size-6 has-text-light">
+                        Wellness applications are common, but<br>
+                        only some are both user-friendly and interactive.<br>
+                        As my final project for a PY4WEB course (CSE 183),<br>
+                        I came up with the idea for such an application<br>
+                        and built it in a team of three. Our project<br>
+                        allows users to visualize how nutritious their<br>
+                        meals are on a virtual plate. This plate can be<br>
+                        edited, deleted, and shared. Privacy settings are<br>
+                        in place through required account creation/<br>
+                        log-in, and plates can be made public or<br>
+                        private at any time. A wide selection of<br>
+                        foods are available with customizable quanities,<br>
+                        and a search feature with exceptional filtering<br>
+                        methods enhances user experience.<br>
+                        I created several functionalities, specifically<br>
+                        the ones to add food, remove food, update quantities,<br>
+                        share the plate, and make the plate public/private.<br>
+                        As we continued developing our application, we<br>
+                        assisted each other with our tasks and enhanced<br>
+                        features as seen fit.
+                        
+                    </p>
+                </div>
+                <div class="column has-text-centered">
+                    <a class="is-size-4 has-text-warning has-text-centered" target=”_blank” href="https://github.com/NickJanes/ConstellationMapping">
+                            <span>Constellation Mapping Visualizer</span>
+                    </a>
+                    <p class="is-size-5 has-text-light">
+                        Course Project (2022)
+                    </p>
+                    <p class="is-size-6 has-text-light">
+                        I have always enjoyed viewing constellations,<br>
+                        but on certain clear night in Santa Cruz, while<br>
+                        I was admiring the hundreds of stars above me, I<br>
+                        realized I did not know much about them - their<br>
+                        origins, meanings, best viewabilities, etc.<br>
+                        So, when my data visualization course (CSE 163)<br>
+                        required us to tackle topics that interested us<br>
+                        for our final project, I knew this would be a<br>
+                        great opportunity for me to learn. In a team of four,<br>
+                        we mapped all 88 constellations by their best<br>
+                        viewability according to month and latitude.<br>
+                        In addition to research on databases we could use,<br>
+                        I created the time slider, the functionality for<br>
+                        filtering the list of constellations by selected<br>
+                        latitude region, the functionality for loading/displaying<br>
+                        images, and the tooltips (specifically their contents).<br>
+                        I also wrote the majority of the text seen on the page<br>
+                        and made the markings of latitude degrees along the map.
+                    </p>
+                </div>
+            </div>
+            
+            <div v-else-if="sql == true">
+                <h1 class="title is-1 has-text-light has-text-centered fade-in"><br>SQL Projects</h1>
+            </div>
+            
+            <div v-else-if="tableau == true">
+                <h1 class="title is-1 has-text-light has-text-centered fade-in"><br>Tableau Projects</h1>
+            </div>
+            
+            <div v-else-if="excel == true">
+                <h1 class="title is-1 has-text-light has-text-centered fade-in"><br>Excel Projects</h1>
+                <div class="column has-text-centered">
+                    <a class="is-size-4 has-text-warning has-text-centered" target=”_blank” href="https://github.com/tkj02/Data_Analyst_Bootcamp/tree/main/Excel">
+                            <span>Bike Sales Analysis</span>
+                    </a>
+                    <p class="is-size-5 has-text-light">
+                        Alex the Analyst Tutorial
+                    </p>
+                    <p class="is-size-6 has-text-light">
+                        I cleaned data on bike sales, created pivot<br>
+                        tables, and constructed an interactive dashboard.
+                    </p>
+                </div>
+            </div>
+            
+            <div v-else-if="certificates == true">
+                <h1 class="title is-1 has-text-light has-text-centered fade-in"><br>Certificates</h1>
+                <h5 class="subtitle has-text-light has-text-centered">
+                    <br>
+                    <div class="columns is-mobile">
+                        <div class="column has-text-right">
+                            <p class="is-size-5 has-text-light">2023</p>
+                        </div>
+                        <div class="column">
+                            Scripting with Python and SQL<br>for Data Engineering
+                        </div>
+                        <div class="column has-text-left">
+                            <a class="button is-warning has-text-centered" target=”_blank” href="https://www.coursera.org/account/accomplishments/certificate/YJYKTUDQTKBK">
+                                <span class="icon"><i class="fa fa-w fa-check"></i></span>
+                                <span>Certificate</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="columns is-mobile">
+                        <div class="column has-text-right">
+                            <p class="is-size-5 has-text-light">2023</p>
+                        </div>
+                        <div class="column">
+                            Data Analysis in Python
+                        </div>
+                        <div class="column has-text-left">
+                            <a class="button is-warning has-text-centered" target=”_blank” href="https://www.coursera.org/account/accomplishments/certificate/3VH9YBUTZYBX">
+                                <span class="icon"><i class="fa fa-w fa-check"></i></span>
+                                <span>Certificate</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="columns is-mobile">
+                        <div class="column has-text-right">
+                            <p class="is-size-5 has-text-light">2022</p>
+                        </div>
+                        <div class="column">
+                            Programming Fundamentals (C)
+                        </div>
+                        <div class="column has-text-left">
+                            <a class="button is-warning has-text-centered" target=”_blank” href="https://coursera.org/share/46fc286f0a4536d5889d7ab4c431a0b2">
+                                <span class="icon"><i class="fa fa-w fa-check"></i></span>
+                                <span>Certificate</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="columns is-mobile">
+                        <div class="column has-text-right">
+                            <p class="is-size-5 has-text-light">2022</p>
+                        </div>
+                        <div class="column">
+                            Introduction to Genomic Technologies
+                        </div>
+                        <div class="column has-text-left">
+                            <a class="button is-warning has-text-centered" target=”_blank” href="https://www.coursera.org/account/accomplishments/verify/BLNAKHALH9SY">
+                                <span class="icon"><i class="fa fa-w fa-check"></i></span>
+                                <span>Certificate</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="columns is-mobile">
+                        <div class="column has-text-right">
+                            <p class="is-size-5 has-text-light">2021</p>
+                        </div>
+                        <div class="column">
+                            SQL for Data Science
+                        </div>
+                        <div class="column has-text-left">
+                            <a class="button is-warning has-text-centered" target=”_blank” href="https://www.coursera.org/account/accomplishments/verify/T3VSE5L84WV4">
+                                <span class="icon"><i class="fa fa-w fa-check"></i></span>
+                                <span>Certificate</span>
+                            </a>
+                        </div>
+                    </div>
+                </h5>
+            </div>
+        </div>
+    </head>
+</html>
