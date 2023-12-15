@@ -39,23 +39,24 @@
                               Projects
                           </a>
                           <div class="navbar-dropdown">
-                              <a class="navbar-item" id="py_selection" @click="python_button">
-                                  Python
-                              </a>
                               <a class="navbar-item" id="c_selection" @click="c_button">
                                   C
                               </a>
-                              <a class="navbar-item" id="html_selection" @click="html_button">
-                                  HTML
+                              <a class="navbar-item" id="excel_selection" @click="excel_button">
+                                  Excel
                               </a>
+                              <a class="navbar-item" id="py_selection" @click="python_button">
+                                  Python
+                              </a>
+                              
                               <a class="navbar-item" id="sql_selection" @click="sql_button">
                                   SQL
                               </a>
                               <a class="navbar-item" id="tab_selection" @click="tableau_button">
                                   Tableau
                               </a>
-                              <a class="navbar-item" id="excel_selection" @click="excel_button">
-                                  Excel
+                              <a class="navbar-item" id="html_selection" @click="html_button">
+                                  Websites
                               </a>
                           </div>
                       </div>
@@ -76,7 +77,7 @@
                     <br>Undergraduate at UCSC
                     <br>Studying Computer Science &amp; Bioinformatics
                     <br>Passionate about Data Science &amp; Analytics
-                    <br>Skilled in Python, C, HTML, &amp; SQL
+                    <br>Skilled in Python, C, JavaScript, &amp; SQL
                 </h5>
 
                 <div class="buttons is-centered">
@@ -93,7 +94,7 @@
                         <span class="icon"><i class="fa fa-fw fa-brands fa-github"></i></span>
                         <span>GitHub</span>
                     </a>
-                    <a class="button is-warning has-text-centered" target=”_blank” href="https://public.tableau.com/app/profile/teresa.joseph">
+                    <a class="button is-warning has-text-centered" target=”_blank” href="https://public.tableau.com/app/profile/tjoseph/vizzes">
                         <span class="icon"><i class="fa fa-fw fa-table"></i></span>
                         <span>Tableau</span>
                     </a>
@@ -115,23 +116,25 @@
                         <div class="column has-text-right">
                             <p class="is-size-5 has-text-light">April 2023 - Present</p>
                         </div>
-                        <div class="column">
+                        <div class="column" style="width:10%">
                             <p class="is-size-4 has-text-warning">Course Reader</p>
                             <p class="is-size-5 has-text-light">Baskin School of Engineering</p>
                             <p class="is-size-6 has-text-light">
-                                I was a reader for STAT 132 (Classical and<br>
-                                Bayesian Inference) and evaluated over 500<br>
-                                statistics problems and R programs.<br>
-                                I collaborated with my colleagues on creating<br>
-                                clear rubrics and strict deadlines every week.<br>
-                                I recently began working for CSE 102 (Analysis<br>
-                                of Algorithms), CSE 120 (Computer Architecture),<br>
-                                and STAT 80A (Gaming and Gambling) in which<br>
-                                I will complete similar tasks.
+                                I was a reader for CSE 102 (Analysis of<br>
+                                Algorithms), CSE 120 (Computer Architecture),<br>
+                                STAT 80A (Gaming and Gambling), and STAT 132<br>
+                                (Classical and Bayesian Inference) at UCSC.<br>
+                                Across all courses, I evaluated over 1000<br>
+                                statistical and analytical problems as well as<br>
+                                programs in R and MIPS. I collaborated with<br>
+                                my colleagues on creating clear rubrics and<br>
+                                adhering to strict deadlines every week.<br>
+                                I will soon complete similar tasks for AM 147<br>
+                                (Computational Methods and Applications).
                             </p>
                         </div>
                         <div class="column has-text-left">
-                             <p class="is-size-5 has-text-light">R, MIPS, Canvas</p>
+                             <p class="is-size-5 has-text-light">R, MIPS, MATLAB</p>
                         </div>
                     </div>
                     <div class="columns is-mobile">
@@ -232,9 +235,44 @@
             </div>
             
             <div v-else-if="html == true">
-                <h1 class="title is-1 has-text-light has-text-centered fade-in"><br>HTML Projects</h1>
+                <h1 class="title is-1 has-text-light has-text-centered fade-in"><br>Websites</h1>
                 <div class="column has-text-centered">
-                    <a class="is-size-4 has-text-warning has-text-centered" target=”_blank” href="https://github.com/tkj02/Nutrition/tree/main">
+                    <a class="is-size-4 has-text-warning has-text-centered is-underlined" target=”_blank” href="https://github.com/sabrinafogel/CruzCards">
+                            <span>CruzCards: Flashcard Service</span>
+                    </a>
+                    <p class="is-size-5 has-text-light">
+                        Course Project (2023)
+                    </p>
+                    <p class="is-size-6 has-text-light">
+                        My four teammates and I saw the need<br>
+                        for a free, interactive study tool that<br>
+                        would assist students like us. Our project<br>
+                        allows users to create flashcards or view<br>
+                        other users’ flashcards and quiz themselves<br>
+                        through a playable “game.” Flashcards are<br>
+                        contained in sets, multiple sets are contained<br>
+                        in a chapter, and  multiple chapters are<br>
+                        contained in a course. I worked on both the<br>
+                        frontend (Express.js) and the backend (Firebase<br>
+                        and Neon.tech) of this project. More specifically,<br>
+                        I developed the sidebar, search bars, course<br>
+                        privacy settings, course deletion feature, and<br>
+                        tag creation for both courses and chapters.<br>
+                        Though most of the technologies we used were<br>
+                        new to me, I found that I was able to be<br>
+                        successful at my tasks through the time and<br>
+                        effort I made to explore documentation and<br>
+                        examples. Moreover, our team made use of Scrum<br>
+                        practices throughout this project, and I was<br>
+                        the Scrum Master for our third Sprint. Directing<br>
+                        meetings and managing our Scrum board/other<br>
+                        documentation was an excellent experience, and<br>
+                        I am very proud of our end result!
+                        
+                    </p>
+                </div>
+                <div class="column has-text-centered">
+                    <a class="is-size-4 has-text-warning has-text-centered is-underlined" target=”_blank” href="https://github.com/tkj02/Nutrition">
                             <span>Nutrition Visualizer</span>
                     </a>
                     <p class="is-size-5 has-text-light">
@@ -261,11 +299,10 @@
                         As we continued developing our application, we<br>
                         assisted each other with our tasks and enhanced<br>
                         features as seen fit.
-                        
                     </p>
                 </div>
                 <div class="column has-text-centered">
-                    <a class="is-size-4 has-text-warning has-text-centered" target=”_blank” href="https://github.com/NickJanes/ConstellationMapping">
+                    <a class="is-size-4 has-text-warning has-text-centered is-underlined" target=”_blank” href="https://github.com/NickJanes/ConstellationMapping">
                             <span>Constellation Mapping Visualizer</span>
                     </a>
                     <p class="is-size-5 has-text-light">
@@ -273,23 +310,23 @@
                     </p>
                     <p class="is-size-6 has-text-light">
                         I have always enjoyed viewing constellations,<br>
-                        but on certain clear night in Santa Cruz, while<br>
+                        but on a special, clear night in Santa Cruz, while<br>
                         I was admiring the hundreds of stars above me, I<br>
                         realized I did not know much about them - their<br>
-                        origins, meanings, best viewabilities, etc.<br>
+                        origins, meanings, best viewing period, etc.<br>
                         So, when my data visualization course (CSE 163)<br>
                         required us to tackle topics that interested us<br>
                         for our final project, I knew this would be a<br>
                         great opportunity for me to learn. In a team of four,<br>
                         we mapped all 88 constellations by their best<br>
                         viewability according to month and latitude.<br>
-                        In addition to research on databases we could use,<br>
+                        In addition to researching databases we could use,<br>
                         I created the time slider, the functionality for<br>
                         filtering the list of constellations by selected<br>
-                        latitude region, the functionality for loading/displaying<br>
-                        images, and the tooltips (specifically their contents).<br>
-                        I also wrote the majority of the text seen on the page<br>
-                        and made the markings of latitude degrees along the map.
+                        latitude region, the functionality for loading/<br>
+                        displaying images, and the tooltip contents.<br>
+                        I also wrote the majority of the text seen on the<br>
+                        page and made the latitude markings along the map.
                     </p>
                 </div>
             </div>
