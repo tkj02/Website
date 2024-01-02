@@ -39,21 +39,8 @@
                               Projects
                           </a>
                           <div class="navbar-dropdown">
-                              <a class="navbar-item" id="c_selection" @click="c_button">
-                                  C
-                              </a>
-                              <a class="navbar-item" id="excel_selection" @click="excel_button">
-                                  Excel
-                              </a>
-                              <a class="navbar-item" id="py_selection" @click="python_button">
-                                  Python
-                              </a>
-                              
-                              <a class="navbar-item" id="sql_selection" @click="sql_button">
-                                  SQL
-                              </a>
-                              <a class="navbar-item" id="tab_selection" @click="tableau_button">
-                                  Tableau
+                              <a class="navbar-item" id="analytics_selection" @click="analytics_button">
+                                  Analytics
                               </a>
                               <a class="navbar-item" id="html_selection" @click="html_button">
                                   Websites
@@ -81,11 +68,6 @@
                 </h5>
 
                 <div class="buttons is-centered">
-
-                    <a class="button is-warning has-text-centered" target=”_blank” href="https://www.linkedin.com/in/teresa-joseph/">
-                        <span class="icon"><i class="fa fa-fw fa-brands fa-linkedin"></i></span>
-                        <span>LinkedIn</span>
-                    </a>
                     <a class="button is-warning has-text-centered" target=”_blank” href="mailto:josephkteresa@gmail.com">
                         <span class="icon"><i class="fa fa-fw fa-envelope"></i></span>
                         <span>Email</span>
@@ -93,6 +75,10 @@
                     <a class="button is-warning has-text-centered" target=”_blank” href="https://github.com/tkj02">
                         <span class="icon"><i class="fa fa-fw fa-brands fa-github"></i></span>
                         <span>GitHub</span>
+                    </a>
+                    <a class="button is-warning has-text-centered" target=”_blank” href="https://www.linkedin.com/in/teresa-joseph/">
+                        <span class="icon"><i class="fa fa-fw fa-brands fa-linkedin"></i></span>
+                        <span>LinkedIn</span>
                     </a>
                     <a class="button is-warning has-text-centered" target=”_blank” href="https://public.tableau.com/app/profile/tjoseph/vizzes">
                         <span class="icon"><i class="fa fa-fw fa-table"></i></span>
@@ -114,7 +100,7 @@
                     <br>
                     <div class="columns is-mobile">
                         <div class="column has-text-right">
-                            <p class="is-size-5 has-text-light">April 2023 - Present</p>
+                            <p class="is-size-4 has-text-light">April 2023 - Present</p>
                         </div>
                         <div class="column" style="width:10%">
                             <p class="is-size-4 has-text-warning">Course Reader</p>
@@ -226,12 +212,39 @@
                 <h1 class="title is-1 has-text-light has-text-centered fade-in"><br>Skills</h1>
             </div>
             
-            <div v-else-if="python == true">
-                <h1 class="title is-1 has-text-light has-text-centered fade-in"><br>Python Projects</h1>
-            </div>
-            
-            <div v-else-if="c == true">
-                <h1 class="title is-1 has-text-light has-text-centered fade-in"><br>C Projects</h1>
+            <div v-else-if="analytics == true">
+                <h1 class="title is-1 has-text-light has-text-centered fade-in"><br>Analytics</h1>
+                <div class="column has-text-centered">
+                    <a class="is-size-4 has-text-warning has-text-centered is-underlined" target=”_blank” href="https://github.com/tkj02/Analytics_Projects/tree/main/Bike%20Sales%20Analysis">
+                        <span>Bike Sales Analysis</span>
+                    </a>
+                    <p class="is-size-5 has-text-light">
+                        Alex the Analyst Tutorial (2023)
+                    </p>
+                    <p class="is-size-6 has-text-light">
+                        I cleaned data on 1000+ bike sales, created pivot<br>
+                        tables, and constructed an interactive dashboard<br>
+                        to view sales by customer information using Excel.<br>
+                        Data and guidance were provided by Alex Freberg<br>
+                        through his <a class="is-underlined" href="https://www.youtube.com/@AlexTheAnalyst" target=”_blank”>
+                            <span>YouTube channel</span>
+                        </a>.
+                    </p>
+                </div>
+                <div class="column has-text-centered">
+                    <a class="is-size-4 has-text-warning has-text-centered is-underlined" target=”_blank” href="https://github.com/tkj02/Analytics_Projects/tree/main/Thyroid%20Disease%20Analysis">
+                        <span>Thyroid Disease Analysis</span>
+                    </a>
+                    <p class="is-size-5 has-text-light">
+                        Personal Project (2023)
+                    </p>
+                    <p class="is-size-6 has-text-light">
+                        I cleaned data on 9000+ patients and explored<br>
+                        the prevalence of thyroid disease by age and sex<br>
+                        using PostgreSQL. Using my transformed data,<br>
+                        I also constructed an interactive dashboard on Tableau.
+                    </p>
+                </div>
             </div>
             
             <div v-else-if="html == true">
@@ -327,30 +340,6 @@
                         displaying images, and the tooltip contents.<br>
                         I also wrote the majority of the text seen on the<br>
                         page and made the latitude markings along the map.
-                    </p>
-                </div>
-            </div>
-            
-            <div v-else-if="sql == true">
-                <h1 class="title is-1 has-text-light has-text-centered fade-in"><br>SQL Projects</h1>
-            </div>
-            
-            <div v-else-if="tableau == true">
-                <h1 class="title is-1 has-text-light has-text-centered fade-in"><br>Tableau Projects</h1>
-            </div>
-            
-            <div v-else-if="excel == true">
-                <h1 class="title is-1 has-text-light has-text-centered fade-in"><br>Excel Projects</h1>
-                <div class="column has-text-centered">
-                    <a class="is-size-4 has-text-warning has-text-centered" target=”_blank” href="https://github.com/tkj02/Data_Analyst_Bootcamp/tree/main/Excel">
-                            <span>Bike Sales Analysis</span>
-                    </a>
-                    <p class="is-size-5 has-text-light">
-                        Alex the Analyst Tutorial
-                    </p>
-                    <p class="is-size-6 has-text-light">
-                        I cleaned data on bike sales, created pivot<br>
-                        tables, and constructed an interactive dashboard.
                     </p>
                 </div>
             </div>
