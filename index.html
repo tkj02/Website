@@ -17,23 +17,18 @@
 		<title>Teresa Joseph</title>
         
         <div class="section" id="vue-target">
+            
         
             <nav class="navbar is-warning" role="navigation">
               <div id="navbar" class="navbar-menu">
-                  <div class="navbar-start">
+                  <div class="navbar-start" style="flex: auto">
                       <a class="navbar-item" id="home_selection" @click="home_button">
                           <span class="icon"><i class="fa fa-fw fa-home"></i></span>
                           <span> Home</span>
                       </a>
-
                       <a class="navbar-item" id="exp_selection" @click="experience_button">
                           Experience
                       </a>
-
-                      <a class="navbar-item" id="skills_selection" @click="skills_button">
-                          Skills
-                      </a>
-
                       <div class="navbar-item has-dropdown is-hoverable">
                           <a class="navbar-link">
                               Projects
@@ -47,7 +42,6 @@
                               </a>
                           </div>
                       </div>
-
                       <a class="navbar-item" id="cert_selection" @click="certificates_button">
                           Certificates
                       </a>
@@ -64,7 +58,7 @@
                     <br>Undergraduate at UCSC
                     <br>Studying Computer Science &amp; Bioinformatics
                     <br>Passionate about DA/DS &amp; Web Development
-                    <br>Skilled in Python, C, JavaScript, &amp; SQL
+                    <br>Skilled in Python, SQL, C, &amp; JavaScript
                 </h5>
 
                 <div class="buttons is-centered">
@@ -86,11 +80,11 @@
                     </a>
                 </div>
 
-                <img src="placeholder.png" class="center" style="display: block; margin-left: auto; margin-right: auto; width: 30%">
+                <img src="pfp.png" class="center" style="display: block; margin-left: auto; margin-right: auto; width: 30%">
 
                 <h5 class="subtitle has-text-light has-text-centered">
-                    <br>This page is still under construction.
-                    <br>Check back another time!<br><br>
+                    <br>Thanks for visiting my website!
+                    <br>Feel free to reach out anytime :)
                 </h5>
             </div>
             
@@ -98,6 +92,7 @@
                 <h1 class="title is-1 has-text-light has-text-centered fade-in"><br>Experience</h1>
                 <h5 class="subtitle has-text-light has-text-centered">
                     <br>
+                    
                     <div class="columns is-mobile">
                         <div class="column has-text-right">
                             <p class="is-size-5 has-text-light">April 2023 - Present</p>
@@ -209,75 +204,94 @@
                 </h5>
             </div>
             
-            <div v-else-if="skills == true">
-                <h1 class="title is-1 has-text-light has-text-centered fade-in"><br>Skills</h1>
-            </div>
-            
             <div v-else-if="analytics == true">
                 <h1 class="title is-1 has-text-light has-text-centered fade-in"><br>Analytics</h1>
-                <div class="column has-text-centered">
-                    <a class="is-size-4 has-text-warning has-text-centered is-underlined" target=”_blank” href="https://github.com/tkj02/Analytics_Projects/tree/main/Electric%20Vehicle%20Sales%20Analysis">
-                        <span>Electric Vehicle Sales Analysis</span>
-                    </a>
-                    <p class="is-size-5 has-text-light">
-                        Personal Project (2024)
-                    </p>
-                    <p class="is-size-6 has-text-light">
-                        I cleaned and transformed 5000+ car sales data<br>
-                        in Excel and PostgreSQL, then used this data to<br>
-                        construct views that would answer inquiries<br>
-                        on yearly sales. A visualization of actual sales<br>
-                        compared to expected sales can be seen on Tableau.
-                    </p>
+                
+                <div class="columns is-mobile">
+                    <div class="column has-text-right">
+                        <a class="is-size-4 has-text-warning has-text-centered is-underlined" target=”_blank” href="https://github.com/tkj02/Analytics_Projects/tree/main/Electric%20Vehicle%20Sales%20Analysis">
+                            <span>Electric Vehicle Sales Analysis</span>
+                        </a>
+                        <p class="is-size-5 has-text-light">
+                            Personal Project (2024)
+                        </p>
+                        <p class="is-size-6 has-text-light">
+                            I cleaned and transformed 5000+ car sales data<br>
+                            in Excel and PostgreSQL, then used this data to<br>
+                            construct views that would answer inquiries<br>
+                            on yearly sales. A visualization of actual sales<br>
+                            compared to expected sales can be seen on Tableau.
+                        </p>
+                    </div>
+                    <div class="column has-text-left">
+                        <img src="https://github.com/tkj02/Analytics_Projects/blob/main/Electric%20Vehicle%20Sales%20Analysis/Dashboard.png?raw=true" style="display: block; margin-left: auto; margin-right: auto; width: 80%">
+                    </div>
                 </div>
-                <div class="column has-text-centered">
-                    <a class="is-size-4 has-text-warning has-text-centered is-underlined" target=”_blank” href="https://github.com/tkj02/Analytics_Projects/tree/main/Movie%20Correlation%20Analysis">
-                        <span>Movie Correlation Analysis</span>
-                    </a>
-                    <p class="is-size-5 has-text-light">
-                        Alex the Analyst Tutorial (2024)
-                    </p>
-                    <p class="is-size-6 has-text-light">
-                        I cleaned data on 7000+ movies and conducted<br>
-                        exploratory analysis in Python through Matplotlib,<br>
-                        Pandas, NumPy, and Seaborn. I found a positive<br>
-                        correlation between movie budget and gross revenue.<br>
-                        Data and guidance were provided by Alex Freberg<br>
-                        through his <a class="is-underlined" href="https://www.youtube.com/@AlexTheAnalyst" target=”_blank”>
-                            <span>YouTube channel</span>
-                        </a>.
-                    </p>
+                <div class="columns is-mobile">
+                    <div class="column has-text-right">
+                        <a class="is-size-4 has-text-warning has-text-centered is-underlined" target=”_blank” href="https://github.com/tkj02/Analytics_Projects/tree/main/Movie%20Correlation%20Analysis">
+                            <span>Movie Correlation Analysis</span>
+                        </a>
+                        <p class="is-size-5 has-text-light">
+                            Alex the Analyst Tutorial (2024)
+                        </p>
+                        <p class="is-size-6 has-text-light">
+                            I cleaned data on 7000+ movies and conducted<br>
+                            exploratory analysis in Python through Matplotlib,<br>
+                            Pandas, NumPy, and Seaborn. I found a positive<br>
+                            correlation between movie budget and gross revenue.<br>
+                            Data and guidance were provided by Alex Freberg<br>
+                            through his <a class="is-underlined" href="https://www.youtube.com/@AlexTheAnalyst" target=”_blank”>
+                                <span>YouTube channel</span>
+                            </a>.
+                        </p>
+                    </div>
+                    <div class="column has-text-left">
+                        <p>insert image</p>
+                    </div>
                 </div>
-                <div class="column has-text-centered">
-                    <a class="is-size-4 has-text-warning has-text-centered is-underlined" target=”_blank” href="https://github.com/tkj02/Analytics_Projects/tree/main/Thyroid%20Disease%20Analysis">
-                        <span>Thyroid Disease Analysis</span>
-                    </a>
-                    <p class="is-size-5 has-text-light">
-                        Personal Project (2023)
-                    </p>
-                    <p class="is-size-6 has-text-light">
-                        I cleaned data on 9000+ patients and explored<br>
-                        the prevalence of thyroid disease by age and sex<br>
-                        using PostgreSQL. Using my transformed data,<br>
-                        I also constructed an interactive dashboard on Tableau.
-                    </p>
+                
+                <div class="columns is-mobile">
+                    <div class="column has-text-right">
+                        <a class="is-size-4 has-text-warning has-text-centered is-underlined" target=”_blank” href="https://github.com/tkj02/Analytics_Projects/tree/main/Thyroid%20Disease%20Analysis">
+                            <span>Thyroid Disease Analysis</span>
+                        </a>
+                        <p class="is-size-5 has-text-light">
+                            Personal Project (2023)
+                        </p>
+                        <p class="is-size-6 has-text-light">
+                            I cleaned data on 9000+ patients and explored<br>
+                            the prevalence of thyroid disease by age and sex<br>
+                            using PostgreSQL. Using my transformed data,<br>
+                            I also constructed an interactive dashboard on Tableau.
+                        </p>
+                    </div>
+                    <div class="column has-text-left">
+                        <img src="https://github.com/tkj02/Analytics_Projects/blob/main/Thyroid%20Disease%20Analysis/Dashboard.png?raw=true" style="display: block; margin-left: auto; margin-right: auto; width: 80%">
+                    </div>
                 </div>
-                <div class="column has-text-centered">
-                    <a class="is-size-4 has-text-warning has-text-centered is-underlined" target=”_blank” href="https://github.com/tkj02/Analytics_Projects/tree/main/Bike%20Sales%20Analysis">
-                        <span>Bike Sales Analysis</span>
-                    </a>
-                    <p class="is-size-5 has-text-light">
-                        Alex the Analyst Tutorial (2023)
-                    </p>
-                    <p class="is-size-6 has-text-light">
-                        I cleaned data on 1000+ bike sales, created pivot<br>
-                        tables, and constructed an interactive dashboard<br>
-                        to view sales by customer information using Excel.<br>
-                        Data and guidance were provided by Alex Freberg<br>
-                        through his <a class="is-underlined" href="https://www.youtube.com/@AlexTheAnalyst" target=”_blank”>
-                            <span>YouTube channel</span>
-                        </a>.
-                    </p>
+                
+                <div class="columns is-mobile">
+                    <div class="column has-text-right">
+                        <a class="is-size-4 has-text-warning has-text-centered is-underlined" target=”_blank” href="https://github.com/tkj02/Analytics_Projects/tree/main/Bike%20Sales%20Analysis">
+                            <span>Bike Sales Analysis</span>
+                        </a>
+                        <p class="is-size-5 has-text-light">
+                            Alex the Analyst Tutorial (2023)
+                        </p>
+                        <p class="is-size-6 has-text-light">
+                            I cleaned data on 1000+ bike sales, created pivot<br>
+                            tables, and constructed an interactive dashboard<br>
+                            to view sales by customer information using Excel.<br>
+                            Data and guidance were provided by Alex Freberg<br>
+                            through his <a class="is-underlined" href="https://www.youtube.com/@AlexTheAnalyst" target=”_blank”>
+                                <span>YouTube channel</span>
+                            </a>.
+                        </p>
+                    </div>
+                    <div class="column has-text-left">
+                        <img src="https://private-user-images.githubusercontent.com/95245871/293442684-e2f631c0-a85b-47d7-8c72-1dea7e07b829.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk0NTY3MzgsIm5iZiI6MTcwOTQ1NjQzOCwicGF0aCI6Ii85NTI0NTg3MS8yOTM0NDI2ODQtZTJmNjMxYzAtYTg1Yi00N2Q3LThjNzItMWRlYTdlMDdiODI5LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAzMDMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMzAzVDA5MDAzOFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTBiZWZlY2RkYzc4ZWU0Zjc1N2NkYzgwMWZkYTk0MmFhODMyZTU5MWIwYTJmZjQzNTJiYTY2YWZhNjA5NzU4YjImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.CYVF0Jub-DnikgIKul_nBRNQ6ZBH-huTvbh80DLG--c" style="display: block; margin-left: auto; margin-right: auto; width: 80%">
+                    </div>
                 </div>
                 
             </div>
@@ -389,6 +403,9 @@
                         </div>
                         <div class="column">
                             Introduction to Data Analysis Using Excel
+                            <p style="font-size:15px">
+                                -----------------------------<br>
+                                Charts, Pivot Tables, VLOOKUP</p>
                         </div>
                         <div class="column has-text-left">
                             <a class="button is-warning has-text-centered" target=”_blank” href="https://www.coursera.org/account/accomplishments/certificate/S5JXC4WTFASX">
@@ -403,6 +420,9 @@
                         </div>
                         <div class="column">
                             Scripting with Python and SQL<br>for Data Engineering
+                            <p style="font-size:15px">
+                                --------------------------------------<br>
+                                Data Structures, Queries, Web Scraping</p>
                         </div>
                         <div class="column has-text-left">
                             <a class="button is-warning has-text-centered" target=”_blank” href="https://www.coursera.org/account/accomplishments/certificate/YJYKTUDQTKBK">
@@ -417,6 +437,9 @@
                         </div>
                         <div class="column">
                             Data Analysis in Python
+                            <p style="font-size:15px">
+                                ---------------------------------<br>
+                                Pandas, Numpy, Scipy, SciKit-Learn</p>
                         </div>
                         <div class="column has-text-left">
                             <a class="button is-warning has-text-centered" target=”_blank” href="https://www.coursera.org/account/accomplishments/certificate/3VH9YBUTZYBX">
@@ -431,6 +454,9 @@
                         </div>
                         <div class="column">
                             Programming Fundamentals (C)
+                            <p style="font-size:15px">
+                                --------------------<br>
+                                C, Algorithms, Types</p>
                         </div>
                         <div class="column has-text-left">
                             <a class="button is-warning has-text-centered" target=”_blank” href="https://www.coursera.org/account/accomplishments/certificate/W3NNTADNJ6GV">
@@ -445,6 +471,9 @@
                         </div>
                         <div class="column">
                             Introduction to Genomic Technologies
+                            <p style="font-size:15px">
+                                ----------------------------------<br>
+                                Molecular Biology, PCR, Statistics</p>
                         </div>
                         <div class="column has-text-left">
                             <a class="button is-warning has-text-centered" target=”_blank” href="https://www.coursera.org/account/accomplishments/certificate/BLNAKHALH9SY">
@@ -459,6 +488,9 @@
                         </div>
                         <div class="column">
                             SQL for Data Science
+                            <p style="font-size:15px">
+                                -----------------------------<br>
+                                Aggregate, Filter, Join, Sort</p>
                         </div>
                         <div class="column has-text-left">
                             <a class="button is-warning has-text-centered" target=”_blank” href="https://www.coursera.org/account/accomplishments/certificate/T3VSE5L84WV4">

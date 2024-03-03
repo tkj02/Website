@@ -4,7 +4,6 @@ let init = (app) => {
     app.data = {
         home: true,
         experience: false,
-        skills: false,
         analytics: false,
         html: false,
         certificates: false
@@ -14,7 +13,6 @@ let init = (app) => {
         home_button: function(){
             app.data.home = true;
             app.data.experience = false;
-            app.data.skills = false;
             app.data.analytics = false;
             app.data.html = false;
             app.data.certificates = false;
@@ -23,16 +21,6 @@ let init = (app) => {
         experience_button: function(){
             app.data.home = false;
             app.data.experience = true;
-            app.data.skills = false;
-            app.data.analytics = false;
-            app.data.html = false;
-            app.data.certificates = false;
-        },
-        
-        skills_button: function(){
-            app.data.home = false;
-            app.data.experience = false;
-            app.data.skills = true;
             app.data.analytics = false;
             app.data.html = false;
             app.data.certificates = false;
@@ -41,7 +29,6 @@ let init = (app) => {
         html_button: function(){
             app.data.home = false;
             app.data.experience = false;
-            app.data.skills = false;
             app.data.analytics = false;
             app.data.html = true;
             app.data.certificates = false;
@@ -50,7 +37,6 @@ let init = (app) => {
         analytics_button: function(){
             app.data.home = false;
             app.data.experience = false;
-            app.data.skills = false;
             app.data.analytics = true;
             app.data.html = false;
             app.data.certificates = false;
@@ -59,7 +45,6 @@ let init = (app) => {
         certificates_button: function(){
             app.data.home = false;
             app.data.experience = false;
-            app.data.skills = false;
             app.data.analytics = false;
             app.data.html = false;
             app.data.certificates = true;
