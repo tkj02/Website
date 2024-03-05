@@ -19,6 +19,7 @@
         <div class="section" id="vue-target">
             <nav class="navbar is-warning" role="navigation">
               <div id="navbar" class="navbar-menu is-active">
+                  <div class="navbar-start">
                       <a class="navbar-item" id="home_selection" @click="home_button">
                           <span class="icon"><i class="fa fa-fw fa-home"></i></span>
                           <span> Home</span>
@@ -42,19 +43,19 @@
                       <a class="navbar-item" id="cert_selection" @click="certificates_button">
                           Certificates
                       </a>
+                  </div>
               </div>
             </nav>
         
             <div v-if="home == true">
                 <!-- Title of page -->
-                <h1 class="title is-1 has-text-light has-text-centered fade-in"><br>Hi, I'm Teresa</h1>
+                <h1 class="title is-1 has-text-light has-text-centered has-text-weight-bold"><br>Hi, I'm Teresa</h1>
 
                 <!-- Subtitle description -->
                 <h5 class="subtitle has-text-light has-text-centered">
-                    <br>Undergraduate at UCSC
-                    <br>Studying Computer Science &amp; Bioinformatics
+                    <br>Computer Science &amp; Bioinformatics at UCSC
                     <br>Passionate about DA/DS &amp; Web Development
-                    <br>Skilled in Python, SQL, C, &amp; JavaScript
+                    <br>Skilled in Python, SQL, C, JavaScript, &amp; more<br>
                 </h5>
 
                 <div class="buttons is-centered">
@@ -74,6 +75,7 @@
                         <span class="icon"><i class="fa fa-fw fa-table"></i></span>
                         <span>Tableau</span>
                     </a>
+                    <br>
                 </div>
 
                 <img src="images/pfp.png" class="center" style="display: block; margin-left: auto; margin-right: auto; width: 30%">
@@ -90,14 +92,14 @@
                     <br>
                     <div class="columns is-mobile">
                         <div class="column has-text-right">
-                            <p class="is-size-4 has-text-light">
+                            <p class="is-size-5 has-text-light">
                                 April 2023 - March 2024<br>
                                 (MATLAB, MIPS, R)
                             </p>
                         </div>
                         <div class="column has-text-left" style="width:10%">
-                            <p class="is-size-4 has-text-warning has-text-weight-bold">Course Reader</p>
-                            <p class="is-size-4 has-text-light">Baskin School of Engineering</p>
+                            <p class="is-size-5 has-text-warning has-text-weight-bold">Course Reader</p>
+                            <p class="is-size-5 has-text-light">Baskin School of Engineering</p>
                             <p class="is-size-6 has-text-light">
                                 I was a reader for <br>
                                 &nbsp&nbsp&nbsp&nbsp• AM 147 &nbsp&nbsp&nbsp&nbsp(Computational Methods and Applications)<br>
@@ -120,14 +122,14 @@
                     </div>
                     <div class="columns is-mobile">
                         <div class="column has-text-right">
-                            <p class="is-size-4 has-text-light">
+                            <p class="is-size-5 has-text-light">
                                  July 2023 - September 2023<br>
                                 (Excel, Python)
                             </p>
                         </div>
                         <div class="column has-text-left">
-                             <p class="is-size-4 has-text-warning has-text-weight-bold">Research Assistant</p>
-                            <p class="is-size-4 has-text-light">UCSC Economics Department</p>
+                            <p class="is-size-5 has-text-warning has-text-weight-bold">Research Assistant</p>
+                            <p class="is-size-5 has-text-light">UCSC Economics Department</p>
                             <p class="is-size-6 has-text-light">
                                 I collected and assessed data from over 175 banks<br>
                                 around the world to further our understanding of<br>
@@ -143,14 +145,14 @@
                     </div>
                     <div class="columns is-mobile">
                         <div class="column has-text-right">
-                            <p class="is-size-4 has-text-light">
+                            <p class="is-size-5 has-text-light">
                                 January 2022 - March 2023<br>
                                 (Canvas, Python)
                             </p>
                         </div>
                         <div class="column has-text-left">
-                            <p class="is-size-4 has-text-warning has-text-weight-bold">Python Course Tutor</p>
-                            <p class="is-size-4 has-text-light">Baskin School of Engineering</p>
+                            <p class="is-size-5 has-text-warning has-text-weight-bold">Python Course Tutor</p>
+                            <p class="is-size-5 has-text-light">Baskin School of Engineering</p>
                             <p class="is-size-6 has-text-light">
                                 I directed over 250 hours of one-on-one tutoring<br>
                                 sessions where I assisted beginner programers by debugging<br>
@@ -173,14 +175,14 @@
                     </div>
                     <div class="columns is-mobile">
                         <div class="column has-text-right">
-                            <p class="is-size-4 has-text-light">
+                            <p class="is-size-5 has-text-light">
                                 June 2022 - August 2022<br>
                                 (ASP.NET Core, C#, Excel)
                             </p>
                         </div>
                         <div class="column has-text-left">
-                            <p class="is-size-4 has-text-warning has-text-weight-bold">Backend Developer Intern</p>
-                            <p class="is-size-4 has-text-light">SkyIT Services</p>
+                            <p class="is-size-5 has-text-warning has-text-weight-bold">Backend Developer Intern</p>
+                            <p class="is-size-5 has-text-light">SkyIT Services</p>
                             <p class="is-size-6 has-text-light">
                                 I wrote, reviewed, and documented over 300 lines of C#<br>
                                 code for the development of a mobile application that would<br>
@@ -194,14 +196,14 @@
                     </div>
                     <div class="columns is-mobile">
                         <div class="column has-text-right">
-                            <p class="is-size-4 has-text-light">
+                            <p class="is-size-5 has-text-light">
                                 September - December 2021, 2022<br>
                                 (Google Suite)
                             </p>
                         </div>
                         <div class="column has-text-left">
-                            <p class="is-size-4 has-text-warning has-text-weight-bold">Peer Notetaker</p>
-                            <p class="is-size-4 has-text-light">UCSC Disability Resources Center</p>
+                            <p class="is-size-5 has-text-warning has-text-weight-bold">Peer Notetaker</p>
+                            <p class="is-size-5 has-text-light">UCSC Disability Resources Center</p>
                             <p class="is-size-6 has-text-light">
                                 I created detailed study guides for<br>
                                 &nbsp&nbsp&nbsp&nbsp• CSE 102 &nbsp(Analysis of Algorithms)<br>
@@ -218,7 +220,7 @@
                 
                 <div class="columns is-mobile">
                     <div class="column has-text-right is-half">
-                        <a class="is-size-4 has-text-warning has-text-centered is-underlined" target=”_blank” href="https://github.com/tkj02/Analytics_Projects/tree/main/Electric%20Vehicle%20Sales%20Analysis">
+                        <a class="is-size-4 has-text-warning has-text-centered is-underlined has-text-weight-bold" target=”_blank” href="https://github.com/tkj02/Analytics_Projects/tree/main/Electric%20Vehicle%20Sales%20Analysis">
                             <span>Electric Vehicle Sales</span>
                         </a>
                         <p class="is-size-5 has-text-light">
@@ -248,7 +250,7 @@
                 </div>
                 <div class="columns is-mobile">
                     <div class="column has-text-right is-half">
-                        <a class="is-size-4 has-text-warning has-text-centered is-underlined" target=”_blank” href="https://github.com/tkj02/Analytics_Projects/tree/main/Movie%20Correlation%20Analysis">
+                        <a class="is-size-4 has-text-warning has-text-centered is-underlined has-text-weight-bold" target=”_blank” href="https://github.com/tkj02/Analytics_Projects/tree/main/Movie%20Correlation%20Analysis">
                             <span>Movie Correlation</span>
                         </a>
                         <p class="is-size-5 has-text-light">
@@ -278,7 +280,7 @@
                 
                 <div class="columns is-mobile">
                     <div class="column has-text-right is-half">
-                        <a class="is-size-4 has-text-warning has-text-centered is-underlined" target=”_blank” href="https://github.com/tkj02/Analytics_Projects/tree/main/Thyroid%20Disease%20Analysis">
+                        <a class="is-size-4 has-text-warning has-text-centered is-underlined has-text-weight-bold" target=”_blank” href="https://github.com/tkj02/Analytics_Projects/tree/main/Thyroid%20Disease%20Analysis">
                             <span>Thyroid Disease</span>
                         </a>
                         <p class="is-size-5 has-text-light">
@@ -309,7 +311,7 @@
                 
                 <div class="columns is-mobile">
                     <div class="column has-text-right is-half">
-                        <a class="is-size-4 has-text-warning has-text-centered is-underlined" target=”_blank” href="https://github.com/tkj02/Analytics_Projects/tree/main/Bike%20Sales%20Analysis">
+                        <a class="is-size-4 has-text-warning has-text-centered is-underlined has-text-weight-bold" target=”_blank” href="https://github.com/tkj02/Analytics_Projects/tree/main/Bike%20Sales%20Analysis">
                             <span>Bike Sales</span>
                         </a>
                         <p class="is-size-5 has-text-light">
@@ -342,7 +344,7 @@
                 <h1 class="title is-1 has-text-light has-text-centered fade-in"><br>Websites</h1>
                 <div class="columns is-mobile">
                     <div class="column has-text-right is-half">
-                        <a class="is-size-4 has-text-warning has-text-centered is-underlined" target=”_blank” href="https://github.com/sabrinafogel/CruzCards">
+                        <a class="is-size-4 has-text-warning has-text-centered is-underlined has-text-weight-bold" target=”_blank” href="https://github.com/sabrinafogel/CruzCards">
                                 <span>CruzCards: Flashcard Service</span>
                         </a>
                         <p class="is-size-5 has-text-light">
@@ -382,7 +384,7 @@
                 
                 <div class="columns is-mobile">
                     <div class="column has-text-right is-half">
-                        <a class="is-size-4 has-text-warning has-text-centered is-underlined" target=”_blank” href="https://github.com/tkj02/Nutrition">
+                        <a class="is-size-4 has-text-warning has-text-centered is-underlined has-text-weight-bold" target=”_blank” href="https://github.com/tkj02/Nutrition">
                                 <span>Nutrition Visualizer</span>
                         </a>
                         <p class="is-size-5 has-text-light">
@@ -418,7 +420,7 @@
                 
                 <div class="columns is-mobile">
                     <div class="column has-text-right is-half">
-                        <a class="is-size-4 has-text-warning has-text-centered is-underlined" target=”_blank” href="https://github.com/NickJanes/ConstellationMapping">
+                        <a class="is-size-4 has-text-warning has-text-centered is-underlined has-text-weight-bold" target=”_blank” href="https://github.com/NickJanes/ConstellationMapping">
                                 <span>Starscape: Constellation Mapping</span>
                         </a>
                         <p class="is-size-5 has-text-light">
@@ -457,7 +459,7 @@
                     <br>
                     <div class="columns is-mobile">
                         <div class="column has-text-right">
-                            <p class="is-size-5 has-text-light">2024</p>
+                            <p class="has-text-light">2024</p>
                         </div>
                         <div class="column">
                             Introduction to Data Analysis Using Excel

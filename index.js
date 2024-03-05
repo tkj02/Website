@@ -49,7 +49,6 @@ let init = (app) => {
             app.data.html = false;
             app.data.certificates = true;
         }
-        
     };
     
     window.onload = function () {
