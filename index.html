@@ -9,14 +9,14 @@
         <!-- Bulma CSS and Font Awesome style sheets -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        
+        <link rel="stylesheet" href="style.css">
+
         <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
         <script src="index.js"></script>
         
-        <!-- Title of tab -->
 		<title>Teresa Joseph</title>
         
-        <div class="section" id="vue-target">
+        <div class="section" id="vue-target" style="padding: 0%; margin: 0%; padding-bottom: 3%;">
             <nav class="navbar is-warning" role="navigation">
               <div id="navbar" class="navbar-menu is-active">
                   <div class="navbar-start">
@@ -29,7 +29,7 @@
                       </a>
                       <div class="navbar-item has-dropdown is-hoverable">
                           <a class="navbar-link">
-                              Projects
+                              Portfolio
                           </a>
                           <div class="navbar-dropdown">
                               <a class="navbar-item" id="analytics_selection" @click="analytics_button">
@@ -48,10 +48,9 @@
             </nav>
         
             <div v-if="home == true">
-                <!-- Title of page -->
+                
                 <h1 class="title is-1 has-text-light has-text-centered has-text-weight-bold"><br>Hi, I'm Teresa</h1>
-
-                <!-- Subtitle description -->
+                
                 <h5 class="subtitle has-text-light has-text-centered">
                     <br>UCSC Grad (Computer Science &amp; Bioinformatics)
                     <br>Passionate about SWE, DA/DS, &amp; Web Development
@@ -78,7 +77,7 @@
                     <br>
                 </div>
 
-                <img src="images/pfp.png" class="center" style="display: block; margin-left: auto; margin-right: auto; width: 30%">
+                <img src="images/pfp.png" alt="Profile picture" class="center" style="display: block; margin-left: auto; margin-right: auto; width: 30%; border: 3px solid #FEDA77; border-radius: 50%; color:white">
 
                 <h5 class="subtitle has-text-light has-text-centered">
                     <br>Thanks for visiting my website!
@@ -100,7 +99,7 @@
                         <div class="column has-text-left" style="width:10%">
                             <p class="is-size-5 has-text-warning has-text-weight-bold">Course Reader</p>
                             <p class="is-size-5 has-text-light">Baskin School of Engineering</p>
-                            <p class="is-size-6 has-text-light">
+                            <p class="is-size-6 has-text-light" style="margin-left: 0; margin-right: auto; width: 60%">
                                 I was a reader for <br>
                                 &nbsp&nbsp&nbsp&nbsp• AM 147 &nbsp&nbsp&nbsp&nbsp(Computational Methods and Applications)<br>
                                 &nbsp&nbsp&nbsp&nbsp• CSE 102 &nbsp&nbsp&nbsp(Analysis of Algorithms)<br>
@@ -109,13 +108,13 @@
                                 &nbsp&nbsp&nbsp&nbsp• STAT 80A (Gaming and Gambling)<br>
                                 &nbsp&nbsp&nbsp&nbsp• STAT 132 &nbsp(Classical and Bayesian Inference)<br>
                                 
-                                Across all courses, I evaluated over 700 statistical<br>
-                                and analytical problems as well as programs in MATLAB,<br>
-                                MIPS, and R. For all evaluations, I shared thoughtful<br>
-                                feedback with high accuracy and speed. I also managed<br>
-                                the confidential academic information of over 300<br>
-                                students in an online database, regularly updating<br>
-                                and verifying data. On demand, I also collaborated with<br>
+                                Across all courses, I evaluated over 700 statistical
+                                and analytical problems as well as programs in MATLAB,
+                                MIPS, and R. For all evaluations, I shared thoughtful
+                                feedback with high accuracy and speed. I also managed
+                                the confidential academic information of over 300
+                                students in an online database, regularly updating
+                                and verifying data. On demand, I also collaborated with
                                 my colleagues to create and review rubrics.
                             </p>
                         </div>
@@ -130,15 +129,15 @@
                         <div class="column has-text-left">
                             <p class="is-size-5 has-text-warning has-text-weight-bold">Research Assistant</p>
                             <p class="is-size-5 has-text-light">UCSC Economics Department</p>
-                            <p class="is-size-6 has-text-light">
-                                I collected and assessed data from over 175 banks<br>
-                                around the world to further our understanding of<br>
-                                foreign exchange rates and their impact on cash flow.<br>
-                                My focus so far has been on Austrian, Canadian, Swedish,<br>
-                                Swiss, and Danish data. I pulled and organized data from<br>
-                                financial reports mainly using Excel. I met with other<br>
-                                researchers to share and discuss our findings weekly.<br>
-                                My contributions helped expedite the research team's<br>
+                            <p class="is-size-6 has-text-light" style="margin-left: 0; margin-right: auto; width: 60%">
+                                I collected and assessed data from over 175 banks
+                                around the world to further our understanding of
+                                foreign exchange rates and their impact on cash flow.
+                                My focus was on Austria, Canada, Sweden,
+                                Switzerland, and Denmark. Using Excel, I pulled and
+                                organized data from financial reports. I met with other
+                                researchers to share and discuss our findings weekly.
+                                My contributions helped expedite the research team's
                                 paper's intended publication date.
                             </p>
                         </div>
@@ -153,22 +152,22 @@
                         <div class="column has-text-left">
                             <p class="is-size-5 has-text-warning has-text-weight-bold">Python Course Tutor</p>
                             <p class="is-size-5 has-text-light">Baskin School of Engineering</p>
-                            <p class="is-size-6 has-text-light">
-                                I directed over 250 hours of one-on-one tutoring<br>
-                                sessions where I assisted beginner programers by debugging<br>
-                                their Python code, explaining programming concepts,<br>
-                                and conducting demonstrations. I assited over 100<br>
-                                students and tracked their progress on course mastery<br>
-                                through follow-up discussions as needed. I exhibited<br>
-                                exceptional time management to help as many people<br>
-                                as possible as well as flexibility in being frequently<br>
-                                available outside of office hours. While this role was<br>
-                                exhausting at times, I found it very rewarding to give<br>
-                                back to my community. I was in these students' shoes at<br>
-                                one point in my academic career, so I know very well that<br>
-                                having the right guidance early on can make a huge difference.<br>
-                                I truly enjoyed having a meaningful, positive impact on<br>
-                                these students, and I am very pleased that I could be a part<br>
+                            <p class="is-size-6 has-text-light" style="margin-left: 0; margin-right: auto; width: 60%">
+                                I directed over 250 hours of one-on-one tutoring
+                                sessions where I assisted beginner programers by debugging
+                                their Python code, explaining programming concepts,
+                                and conducting demonstrations. I assited over 100
+                                students and tracked their progress on course mastery
+                                through follow-up discussions as needed. I exhibited
+                                exceptional time management to help as many people
+                                as possible as well as flexibility in being frequently
+                                available outside of office hours. While this role was
+                                exhausting at times, I found it very rewarding to give
+                                back to my community. I was in these students' shoes
+                                early in my academic career, so I know very well that
+                                having the right guidance on can make a huge difference.
+                                I truly enjoyed having a meaningful, positive impact on
+                                these students, and I am honored that I could be a part
                                 of their academic journeys.
                             </p>
                         </div>
@@ -183,13 +182,13 @@
                         <div class="column has-text-left">
                             <p class="is-size-5 has-text-warning has-text-weight-bold">Backend Developer Intern</p>
                             <p class="is-size-5 has-text-light">SkyIT Services</p>
-                            <p class="is-size-6 has-text-light">
-                                I wrote, reviewed, and documented over 300 lines of C#<br>
-                                code for the development of a mobile application that would<br>
-                                allow users to track their flights. I also fetched and<br>
-                                organized confidential data from the Federal Aviation<br>
-                                Administration. In semiweekly sprint meetings, I mediated<br>
-                                feedback and collaborated with other developers from<br>
+                            <p class="is-size-6 has-text-light" style="margin-left: 0; margin-right: auto; width: 60%">
+                                I wrote, reviewed, and documented over 300 lines of C#
+                                code for the development of a mobile application that would
+                                allow users to track their flights. I also fetched and
+                                organized confidential data from the Federal Aviation
+                                Administration. In semiweekly sprint meetings, I mediated
+                                feedback and collaborated with other developers from
                                 different teams and backgrounds. 
                             </p>
                         </div>
@@ -204,7 +203,7 @@
                         <div class="column has-text-left">
                             <p class="is-size-5 has-text-warning has-text-weight-bold">Peer Notetaker</p>
                             <p class="is-size-5 has-text-light">UCSC Disability Resources Center</p>
-                            <p class="is-size-6 has-text-light">
+                            <p class="is-size-6 has-text-light" style="margin-left: 0; margin-right: auto; width: 60%">
                                 I created detailed study guides for<br>
                                 &nbsp&nbsp&nbsp&nbsp• CSE 102 &nbsp(Analysis of Algorithms)<br>
                                 &nbsp&nbsp&nbsp&nbsp• STAT 131 (Introduction to Probability Theory)<br>
@@ -226,7 +225,7 @@
                         <p class="is-size-5 has-text-light">
                             Personal Project (2024)
                         </p>
-                        <p class="is-size-6 has-text-light">
+                        <p class="is-size-6 has-text-light" style="margin-left: auto; margin-right: 0; width: 80%">
                             I was curious about electric vehicles due to some
                             recent conversations with relatives. I wanted to
                             determine which brands were most popular/successful
@@ -245,7 +244,7 @@
                         </p>
                     </div>
                     <div class="column is-half">
-                        <img src="https://github.com/tkj02/Analytics_Projects/blob/main/Electric%20Vehicle%20Sales%20Analysis/Dashboard.png?raw=true" style="display: block; margin-left: 0; margin-right: auto; width: 80%">
+                        <img src="https://github.com/tkj02/Analytics_Projects/blob/main/Electric%20Vehicle%20Sales%20Analysis/Dashboard.png?raw=true" alt="Dashboard of electric vehicle sales project" style="display: block; margin-left: 0; margin-right: auto; width: 80%; color:white; border: 3px solid #FEDA77">
                     </div>
                 </div>
                 <div class="columns is-mobile">
@@ -256,7 +255,7 @@
                         <p class="is-size-5 has-text-light">
                             Alex the Analyst Tutorial (2024)
                         </p>
-                        <p class="is-size-6 has-text-light">
+                        <p class="is-size-6 has-text-light" style="margin-left: auto; margin-right: 0; width: 80%">
                             I cleaned data on 7000+ films and conducted
                             exploratory analysis using Python's Matplotlib,
                             Pandas, NumPy, and Seaborn. Using the Pearson
@@ -274,7 +273,7 @@
                         </p>
                     </div>
                     <div class="column is-half">
-                        <img src="images/movie_corr_matrix.png" style="display: block; margin-left: 0; margin-right: auto; width: 80%">
+                        <img src="images/movie_corr_matrix.png" alt="Correlation matrix of movie features" style="display: block; margin-left: 0; margin-right: auto; width: 80%; color:white; border: 3px solid #FEDA77">
                     </div>
                 </div>
                 
@@ -286,7 +285,7 @@
                         <p class="is-size-5 has-text-light">
                             Personal Project (2023)
                         </p>
-                        <p class="is-size-6 has-text-light">
+                        <p class="is-size-6 has-text-light" style="margin-left: auto; margin-right: 0; width: 80%">
                             I was diagnosed with hyperthyroidism and wanted to
                             learn more about the prevalence of thyroid conditions
                             and treatment options across people of different
@@ -305,7 +304,7 @@
                         </p>
                     </div>
                     <div class="column is-half">
-                        <img src="https://github.com/tkj02/Analytics_Projects/blob/main/Thyroid%20Disease%20Analysis/Dashboard.png?raw=true" style="display: block; margin-left: 0; margin-right: auto; width: 80%">
+                        <img src="https://github.com/tkj02/Analytics_Projects/blob/main/Thyroid%20Disease%20Analysis/Dashboard.png?raw=true" alt="Dashboard of thyroid disease project" style="display: block; margin-left: 0; margin-right: auto; width: 80%; color:white; border: 3px solid #FEDA77">
                     </div>
                 </div>
                 
@@ -317,7 +316,7 @@
                         <p class="is-size-5 has-text-light">
                             Alex the Analyst Tutorial (2023)
                         </p>
-                        <p class="is-size-6 has-text-light">
+                        <p class="is-size-6 has-text-light" style="margin-left: auto; margin-right: 0; width: 80%">
                             To hone my Excel skills, I followed a tutorial
                             created by Alex Freberg (Alex the Analyst)
                             through his
@@ -334,7 +333,7 @@
                         </p>
                     </div>
                     <div class="column is-half">
-                        <img src="https://github.com/tkj02/Analytics_Projects/blob/main/Bike%20Sales%20Analysis/Dashboard.png?raw=true" style="display: block; margin-left: 0; margin-right: auto; width: 80%">
+                        <img src="https://github.com/tkj02/Analytics_Projects/blob/main/Bike%20Sales%20Analysis/Dashboard.png?raw=true" alt="Dashboard of bike sales project" style="display: block; margin-left: 0; margin-right: auto; width: 80%; color:white; border: 3px solid #FEDA77">
                     </div>
                 </div>
                 
@@ -350,26 +349,23 @@
                         <p class="is-size-5 has-text-light">
                             Course Project (2023)
                         </p>
-                        <p class="is-size-6 has-text-light">
+                        <p class="is-size-6 has-text-light" style="margin-left: auto; margin-right: 0; width: 80%">
                             My four teammates and I saw the need
                             for a free, interactive study tool that
                             would assist students like us. Our project
-                            allows users to create flashcards or view
-                            other users’ flashcards and quiz themselves
-                            through a playable quizzing game. Flashcards
-                            are contained in sets, multiple sets are contained
+                            allows users to create flashcards, view
+                            other users’ flashcards, and play a quizzing game.
+                            Flashcards are contained in sets, multiple sets are contained
                             in a chapter, and multiple chapters are
                             contained in a course. I worked on both the
-                            frontend (React JS) and the backend (Google's
-                            Firebase/NoSQL and Neon.tech/PostgreSQL) of this
-                            project. More specifically, I developed the
-                            sidebar, search bars, course privacy settings,
-                            course deletion feature, and tag creation for
-                            both courses and chapters. Though most of the
-                            technologies we used were new to me at the time,
-                            I found that I was able to be successful at my
-                            tasks through the time and effort I made to
-                            explore relevant documentation and examples.
+                            frontend and backend of this project using
+                            React, Node, and PostgreSQL. More specifically,
+                            I developed the sidebar, search bars, privacy settings,
+                            deletion features, and tag creation. Though I was new
+                            to React and Node at the time, I found that I was
+                            able to be successful at my tasks through the time and
+                            effort I made to  explore relevant documentation and
+                            examples, which made my contributions feel more meaningful.
                             Moreover, our team made use of Scrum practices
                             throughout this project, and I was the Scrum Master
                             for our third Sprint. Directing meetings and managing
@@ -378,7 +374,7 @@
                         </p>
                     </div>
                     <div class="column is-half">
-                        <img src="images/cruzcards.png" style="display: block; margin-left: auto; margin-right: auto; width: 100%">
+                        <img src="images/cruzcards.png" alt="CruzCards website screenshot" style="display: block; margin-left: 0; margin-right: auto; width: 80%; color:white; border: 3px solid #FEDA77">
                     </div>
                 </div>
                 
@@ -390,7 +386,7 @@
                         <p class="is-size-5 has-text-light">
                             Course Project (2023)
                         </p>
-                        <p class="is-size-6 has-text-light">
+                        <p class="is-size-6 has-text-light" style="margin-left: auto; margin-right: 0; width: 80%">
                             Wellness applications are common, but
                             only some are both user-friendly and interactive.
                             As my final project for a PY4WEB course (CSE 183),
@@ -398,10 +394,10 @@
                             and built it in a team of three. Our project
                             allows users to visualize how nutritious their
                             meals are on a virtual plate. This plate can be
-                            edited, deleted, and shared. Privacy settings are
-                            in place through required account creation/
-                            log-in, and plates can be made public or
-                            private at any time. A wide selection of
+                            edited, deleted, and shared with other users.
+                            Privacy settings are in place through required
+                            account creation/log-in, and plates can be made public
+                            or private through a toggle switch. A wide selection of
                             foods are available with customizable quanities,
                             and a search feature with exceptional filtering
                             methods enhances user experience.
@@ -414,7 +410,7 @@
                         </p>
                     </div>
                     <div class="column is-half">
-                        <img src="images/nutrition.png" style="display: block; margin-left: auto; margin-right: auto">
+                        <img src="images/nutrition.png" alt="Nutrition website screenshot" style="display: block; margin-left: 0; margin-right: auto; width: 80%; color:white; border: 3px solid #FEDA77">
                     </div>
                 </div>
                 
@@ -426,7 +422,7 @@
                         <p class="is-size-5 has-text-light">
                             Course Project (2022)
                         </p>
-                        <p class="is-size-6 has-text-light">
+                        <p class="is-size-6 has-text-light" style="margin-left: auto; margin-right: 0; width: 80%">
                             I have always enjoyed viewing constellations,
                             but on a special, clear night in Santa Cruz, while
                             I was admiring the hundreds of stars above me, I
@@ -448,7 +444,7 @@
                         </p>
                     </div>
                     <div class="column is-half">
-                        <img src="images/starscape.png" style="display: block; margin-left: auto; margin-right: auto; width: 100%">
+                        <img src="images/starscape.png" alt="Starscape website screenshot" style="display: block; margin-left: 0; margin-right: auto; width: 80%; color:white; border: 3px solid #FEDA77">
                     </div>
                 </div>
             </div>
