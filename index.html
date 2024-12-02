@@ -3,47 +3,50 @@
 <html lang="en" class="has-background-dark">
     
     <head>
-        <!-- Meta tag -->
+        <!-- Meta info -->
 		<meta charset="utf-8">
+        <meta name="title" content="Teresa Joseph">
+        <meta name="description" content="View Teresa Joseph's portfolio website of skills, experience, and projects.">
+        <meta name="keywords" content="portfolio, personal website, software engineer, web development, data analytics, data science">
         
         <!-- Bulma CSS and Font Awesome style sheets -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 
         <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
         <script src="index.js"></script>
         
 		<title>Teresa Joseph</title>
         
-        <div class="section" id="vue-target" style="padding: 0%; margin: 0%; padding-bottom: 3%;">
-            <nav class="navbar is-warning" role="navigation">
-              <div id="navbar" class="navbar-menu is-active">
-                  <div class="navbar-start">
-                      <a class="navbar-item" id="home_selection" @click="home_button">
-                          <span class="icon"><i class="fa fa-fw fa-home"></i></span>
-                          <span> Home</span>
-                      </a>
-                      <a class="navbar-item" id="exp_selection" @click="experience_button">
-                          Experience
-                      </a>
-                      <div class="navbar-item has-dropdown is-hoverable">
-                          <a class="navbar-link">
-                              Portfolio
-                          </a>
-                          <div class="navbar-dropdown">
-                              <a class="navbar-item" id="analytics_selection" @click="analytics_button">
-                                  Analytics
-                              </a>
-                              <a class="navbar-item" id="html_selection" @click="html_button">
-                                  Websites
-                              </a>
-                          </div>
-                      </div>
-                      <a class="navbar-item" id="cert_selection" @click="certificates_button">
-                          Certificates
-                      </a>
-                  </div>
+        <div class="section bg-dark" id="vue-target" style="padding: 0%; margin: 0%; padding-bottom: 3%;">
+            
+            <nav class="navbar bg-yellow" role="navigation">
+                <div class="navbar-start">
+                    <a class="navbar-item" id="home_selection" @click="home_button">
+                        <span class="icon"><i class="fa fa-fw fa-home"></i></span>
+                        <span> Home</span>
+                    </a>
+                    <a class="navbar-item" id="exp_selection" @click="experience_button">
+                        Experience
+                    </a>
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">
+                            Portfolio
+                        </a>
+                        <div class="navbar-dropdown">
+                            <a class="navbar-item" id="analytics_selection" @click="analytics_button">
+                                Analytics
+                            </a>
+                            <a class="navbar-item" id="html_selection" @click="html_button">
+                                Websites
+                            </a>
+                        </div>
+                    </div>
+                    <a class="navbar-item" id="cert_selection" @click="certificates_button">
+                        Certificates
+                    </a>
               </div>
             </nav>
         
@@ -51,81 +54,86 @@
                 
                 <h1 class="title is-1 has-text-light has-text-centered has-text-weight-bold"><br>Hi, I'm Teresa</h1>
                 
-                <h5 class="subtitle has-text-light has-text-centered">
+                <h2 class="subtitle has-text-light has-text-centered">
                     <br>UCSC Grad (Computer Science &amp; Bioinformatics)
                     <br>Passionate about SWE, DA/DS, &amp; Web Development
                     <br>Skilled in Python, SQL, C, JavaScript, &amp; more<br>
-                </h5>
+                </h2>
 
                 <div class="buttons is-centered">
-                    <a class="button is-warning has-text-centered" target=”_blank” href="mailto:josephkteresa@gmail.com">
+                    <a class="button bg-yellow has-text-centered" target=”_blank” href="mailto:josephkteresa@gmail.com">
                         <span class="icon"><i class="fa fa-fw fa-envelope"></i></span>
                         <span>Email</span>
                     </a>
-                    <a class="button is-warning has-text-centered" target=”_blank” href="https://github.com/tkj02">
+                    <a class="button bg-yellow has-text-centered" target=”_blank” href="https://github.com/tkj02">
                         <span class="icon"><i class="fa fa-fw fa-brands fa-github"></i></span>
                         <span>GitHub</span>
                     </a>
-                    <a class="button is-warning has-text-centered" target=”_blank” href="https://www.linkedin.com/in/teresa-joseph/">
+                    <a class="button bg-yellow has-text-centered" target=”_blank” href="https://www.linkedin.com/in/teresa-joseph/">
                         <span class="icon"><i class="fa fa-fw fa-brands fa-linkedin"></i></span>
                         <span>LinkedIn</span>
                     </a>
-                    <a class="button is-warning has-text-centered" target=”_blank” href="https://public.tableau.com/app/profile/tjoseph/vizzes">
+                    <a class="button bg-yellow has-text-centered" target=”_blank” href="https://public.tableau.com/app/profile/tjoseph/vizzes">
                         <span class="icon"><i class="fa fa-fw fa-table"></i></span>
                         <span>Tableau</span>
                     </a>
                     <br>
                 </div>
 
-                <img src="images/pfp.png" alt="Profile picture" class="center" style="display: block; margin-left: auto; margin-right: auto; width: 30%; border: 3px solid #FEDA77; border-radius: 50%; color:white">
+                <img src="images/pfp.png" loading="lazy" alt="Profile picture" class="center" style="display: block; margin-left: auto; margin-right: auto; width: 30%; border: 3px solid #FEDA77; border-radius: 50%; color:white">
 
-                <h5 class="subtitle has-text-light has-text-centered">
+                <h3 class="subtitle has-text-light has-text-centered">
                     <br>Thanks for visiting my website!
                     <br>Feel free to reach out anytime :)
-                </h5>
+                </h3>
             </div>
             
             <div v-else-if="experience == true">
                 <h1 class="title is-1 has-text-light has-text-centered fade-in"><br>Experience</h1>
-                <h5 class="subtitle has-text-light has-text-centered">
+                <div class="subtitle has-text-light has-text-centered">
                     <br>
-                    <div class="columns is-mobile">
-                        <div class="column has-text-right">
+                    <div class="container">
+                        <div class="row justify-content-evenly">
+                          <div class="col-md-6 has-text-right">
                             <p class="is-size-5 has-text-light">
                                 June 2024 - Present<br>
                                 (HTML, CSS, CMS, GIMP)
                             </p>
-                        </div>
-                        <div class="column has-text-left" style="width:10%">
-                            <p class="is-size-5 has-text-warning has-text-weight-bold">Website Populator</p>
-                            <p class="is-size-5 has-text-light">Golden Shovel Agency</p>
-                            <p class="is-size-6 has-text-light" style="margin-left: 0; margin-right: auto; width: 60%">
+                          </div>
+                          <div class="col-md-6 has-text-left">
+                            <p class="is-size-5 has-text-weight-bold">
+                                <span class="has-text-warning">Website Populator<br></span>Golden Shovel Agency
+                            </p>
+                            <p class="is-size-6 has-text-light">
                                 I create websites for clients in economic development and marketing,
                                 addressing accessibility concerns and improving search engine optimization
                                 through proper formatting, mindful styling, and quality metadata.
                                 I also conduct content research to enhance website quality
                                 and support admin requests to update existing sites as needed.
                             </p>
+                          </div>
                         </div>
                     </div>
-                    <div class="columns is-mobile">
-                        <div class="column has-text-right">
+                    <div class="container">
+                        <div class="row">
+                          <div class="col-md-6 has-text-right">
                             <p class="is-size-5 has-text-light">
                                 April 2023 - March 2024<br>
                                 (MATLAB, MIPS, R)
                             </p>
-                        </div>
-                        <div class="column has-text-left" style="width:10%">
-                            <p class="is-size-5 has-text-warning has-text-weight-bold">Course Reader</p>
-                            <p class="is-size-5 has-text-light">Baskin School of Engineering</p>
-                            <p class="is-size-6 has-text-light" style="margin-left: 0; margin-right: auto; width: 60%">
+                          </div>
+                          <div class="col-md-6 has-text-left">
+                            <p class="is-size-5 has-text-weight-bold">
+                                <span class="has-text-warning">Course Reader<br></span>Baskin School of Engineering
+                            </p>
+                            <p class="is-size-6 has-text-light">
                                 I was a reader for <br>
                                 &nbsp&nbsp&nbsp&nbsp• AM 147 &nbsp&nbsp&nbsp&nbsp(Computational Methods and Applications)<br>
                                 &nbsp&nbsp&nbsp&nbsp• CSE 102 &nbsp&nbsp&nbsp(Analysis of Algorithms)<br>
                                 &nbsp&nbsp&nbsp&nbsp• CSE 107 &nbsp&nbsp&nbsp(Probability and Statistics for Engineers)<br>
                                 &nbsp&nbsp&nbsp&nbsp• CSE 120 &nbsp&nbsp&nbsp(Computer Architecture)<br>
                                 &nbsp&nbsp&nbsp&nbsp• STAT 80A (Gaming and Gambling)<br>
-                                &nbsp&nbsp&nbsp&nbsp• STAT 132 &nbsp(Classical and Bayesian Inference)<br>
+                                &nbsp&nbsp&nbsp&nbsp• STAT 132 &nbsp(Classical and Bayesian Inference)<br><br>
                                 
                                 Across all courses, I evaluated over 700 statistical
                                 and analytical problems as well as programs in MATLAB,
@@ -136,19 +144,22 @@
                                 and verifying data. On demand, I also collaborated with
                                 my colleagues to create and review rubrics.
                             </p>
+                          </div>
                         </div>
                     </div>
-                    <div class="columns is-mobile">
-                        <div class="column has-text-right">
+                    <div class="container">
+                        <div class="row">
+                          <div class="col-md-6 has-text-right">
                             <p class="is-size-5 has-text-light">
                                 July 2023 - September 2023<br>
                                 (Excel, Python)
                             </p>
-                        </div>
-                        <div class="column has-text-left">
-                            <p class="is-size-5 has-text-warning has-text-weight-bold">Research Assistant</p>
-                            <p class="is-size-5 has-text-light">UCSC Economics Department</p>
-                            <p class="is-size-6 has-text-light" style="margin-left: 0; margin-right: auto; width: 60%">
+                          </div>
+                          <div class="col-md-6 has-text-left">
+                            <p class="is-size-5 has-text-weight-bold">
+                                <span class="has-text-warning">Research Assistant<br></span>UCSC Economics Department
+                            </p>
+                            <p class="is-size-6 has-text-light">
                                 I collected and assessed data from over 175 banks
                                 around the world to further our understanding of
                                 foreign exchange rates and their impact on cash flow.
@@ -159,19 +170,22 @@
                                 My contributions helped expedite the research team's
                                 paper's intended publication date.
                             </p>
+                          </div>
                         </div>
                     </div>
-                    <div class="columns is-mobile">
-                        <div class="column has-text-right">
+                    <div class="container">
+                        <div class="row">
+                          <div class="col-md-6 has-text-right">
                             <p class="is-size-5 has-text-light">
                                 January 2022 - March 2023<br>
                                 (Python, Canvas)
                             </p>
-                        </div>
-                        <div class="column has-text-left">
-                            <p class="is-size-5 has-text-warning has-text-weight-bold">Python Course Tutor</p>
-                            <p class="is-size-5 has-text-light">Baskin School of Engineering</p>
-                            <p class="is-size-6 has-text-light" style="margin-left: 0; margin-right: auto; width: 60%">
+                          </div>
+                          <div class="col-md-6 has-text-left">
+                            <p class="is-size-5 has-text-weight-bold">
+                                <span class="has-text-warning">Course Tutor<br></span>Baskin School of Engineering
+                            </p>
+                            <p class="is-size-6 has-text-light">
                                 I directed over 250 hours of one-on-one tutoring
                                 sessions where I assisted beginner programers by debugging
                                 their Python code, explaining programming concepts,
@@ -189,55 +203,62 @@
                                 these students, and I am honored that I could be a part
                                 of their academic journeys.
                             </p>
+                          </div>
                         </div>
                     </div>
-                    <div class="columns is-mobile">
-                        <div class="column has-text-right">
+                    <div class="container">
+                        <div class="row">
+                          <div class="col-md-6 has-text-right">
                             <p class="is-size-5 has-text-light">
                                 June 2022 - August 2022<br>
                                 (C#, ASP.NET Core, Excel)
                             </p>
-                        </div>
-                        <div class="column has-text-left">
-                            <p class="is-size-5 has-text-warning has-text-weight-bold">Backend Developer Intern</p>
-                            <p class="is-size-5 has-text-light">SkyIT Services</p>
-                            <p class="is-size-6 has-text-light" style="margin-left: 0; margin-right: auto; width: 60%">
+                          </div>
+                          <div class="col-md-6 has-text-left">
+                            <p class="is-size-5 has-text-weight-bold">
+                                <span class="has-text-warning">Backend Developer Intern<br></span>SkyIT Services
+                            </p>
+                            <p class="is-size-6 has-text-light">
                                 I wrote, reviewed, and documented over 300 lines of C#
                                 code for the development of a mobile application that would
                                 allow users to track their flights. I also fetched and
                                 organized confidential data from the Federal Aviation
                                 Administration. In semiweekly sprint meetings, I mediated
                                 feedback and collaborated with other developers from
-                                different teams and backgrounds. 
+                                different teams and backgrounds.
                             </p>
+                          </div>
                         </div>
                     </div>
-                    <div class="columns is-mobile">
-                        <div class="column has-text-right">
+                    <div class="container">
+                        <div class="row">
+                          <div class="col-md-6 has-text-right">
                             <p class="is-size-5 has-text-light">
                                 September - December 2021, 2022<br>
                                 (Google Suite)
                             </p>
-                        </div>
-                        <div class="column has-text-left">
-                            <p class="is-size-5 has-text-warning has-text-weight-bold">Peer Notetaker</p>
-                            <p class="is-size-5 has-text-light">UCSC Disability Resources Center</p>
-                            <p class="is-size-6 has-text-light" style="margin-left: 0; margin-right: auto; width: 60%">
+                          </div>
+                          <div class="col-md-6 has-text-left">
+                            <p class="is-size-5 has-text-weight-bold">
+                                <span class="has-text-warning">Peer Notetaker<br></span>UCSC Disability Resources Center
+                            </p>
+                            <p class="is-size-6 has-text-light">
                                 I created detailed study guides for<br>
                                 &nbsp&nbsp&nbsp&nbsp• CSE 102 &nbsp(Analysis of Algorithms)<br>
                                 &nbsp&nbsp&nbsp&nbsp• STAT 131 (Introduction to Probability Theory)<br>
                                 I also facilitated a few study sessions.
                             </p>
+                          </div>
                         </div>
                     </div>
-                </h5>
+                </div>
             </div>
             
             <div v-else-if="analytics == true">
                 <h1 class="title is-1 has-text-light has-text-centered fade-in"><br>Analytics</h1>
-                
-                <div class="columns is-mobile">
-                    <div class="column has-text-right is-half">
+                <div class="container">
+                    <div class="row">
+                      <div class="col-md-6 has-text-right">
                         <a class="is-size-4 has-text-warning has-text-centered is-underlined has-text-weight-bold" target=”_blank” href="https://github.com/tkj02/Analytics_Projects/tree/main/Electric%20Vehicle%20Sales%20Analysis">
                             <span>Electric Vehicle Sales</span>
                         </a>
@@ -261,13 +282,16 @@
                             explore brand popularity by customer demographics and
                             compare EV sales to non-EV sales from the same make.
                         </p>
-                    </div>
-                    <div class="column is-half">
-                        <img src="https://github.com/tkj02/Analytics_Projects/blob/main/Electric%20Vehicle%20Sales%20Analysis/Dashboard.png?raw=true" alt="Dashboard of electric vehicle sales project" style="display: block; margin-left: 0; margin-right: auto; width: 80%; color:white; border: 3px solid #FEDA77">
+                      </div>
+                      <div class="col-md-6">
+                        <img src="https://github.com/tkj02/Analytics_Projects/blob/main/Electric%20Vehicle%20Sales%20Analysis/Dashboard.png?raw=true" loading="lazy" alt="Dashboard of electric vehicle sales project" style="display: block; margin-left: 0; margin-right: auto; width: 80%; color:white; border: 3px solid #FEDA77">
+                      </div>
                     </div>
                 </div>
-                <div class="columns is-mobile">
-                    <div class="column has-text-right is-half">
+                <br>
+                <div class="container">
+                    <div class="row">
+                      <div class="col-md-6 has-text-right">
                         <a class="is-size-4 has-text-warning has-text-centered is-underlined has-text-weight-bold" target=”_blank” href="https://github.com/tkj02/Analytics_Projects/tree/main/Movie%20Correlation%20Analysis">
                             <span>Movie Correlation</span>
                         </a>
@@ -290,14 +314,16 @@
                                 <span>YouTube channel</span>
                             </a>.
                         </p>
-                    </div>
-                    <div class="column is-half">
-                        <img src="images/movie_corr_matrix.png" alt="Correlation matrix of movie features" style="display: block; margin-left: 0; margin-right: auto; width: 80%; color:white; border: 3px solid #FEDA77">
+                      </div>
+                      <div class="col-md-6">
+                        <img src="images/movie_corr_matrix.png" loading="lazy" alt="Correlation matrix of movie features" style="display: block; margin-left: 0; margin-right: auto; width: 80%; color:white; border: 3px solid #FEDA77">
+                      </div>
                     </div>
                 </div>
-                
-                <div class="columns is-mobile">
-                    <div class="column has-text-right is-half">
+                <br>
+                <div class="container">
+                    <div class="row">
+                      <div class="col-md-6 has-text-right">
                         <a class="is-size-4 has-text-warning has-text-centered is-underlined has-text-weight-bold" target=”_blank” href="https://github.com/tkj02/Analytics_Projects/tree/main/Thyroid%20Disease%20Analysis">
                             <span>Thyroid Disease</span>
                         </a>
@@ -321,14 +347,16 @@
                             I found that adult women are most affected and that
                             medication is the most common treatment option.
                         </p>
-                    </div>
-                    <div class="column is-half">
-                        <img src="https://github.com/tkj02/Analytics_Projects/blob/main/Thyroid%20Disease%20Analysis/Dashboard.png?raw=true" alt="Dashboard of thyroid disease project" style="display: block; margin-left: 0; margin-right: auto; width: 80%; color:white; border: 3px solid #FEDA77">
+                      </div>
+                      <div class="col-md-6">
+                        <img src="https://github.com/tkj02/Analytics_Projects/blob/main/Thyroid%20Disease%20Analysis/Dashboard.png?raw=true" loading="lazy" alt="Dashboard of thyroid disease project" style="display: block; margin-left: 0; margin-right: auto; width: 80%; color:white; border: 3px solid #FEDA77">
+                      </div>
                     </div>
                 </div>
-                
-                <div class="columns is-mobile">
-                    <div class="column has-text-right is-half">
+                <br>
+                <div class="container">
+                    <div class="row">
+                      <div class="col-md-6 has-text-right">
                         <a class="is-size-4 has-text-warning has-text-centered is-underlined has-text-weight-bold" target=”_blank” href="https://github.com/tkj02/Analytics_Projects/tree/main/Bike%20Sales%20Analysis">
                             <span>Bike Sales</span>
                         </a>
@@ -350,20 +378,21 @@
                             interactive dashboard using these charts
                             coupled with filters.
                         </p>
-                    </div>
-                    <div class="column is-half">
-                        <img src="https://github.com/tkj02/Analytics_Projects/blob/main/Bike%20Sales%20Analysis/Dashboard.png?raw=true" alt="Dashboard of bike sales project" style="display: block; margin-left: 0; margin-right: auto; width: 80%; color:white; border: 3px solid #FEDA77">
+                      </div>
+                      <div class="col-md-6">
+                        <img src="https://github.com/tkj02/Analytics_Projects/blob/main/Bike%20Sales%20Analysis/Dashboard.png?raw=true" loading="lazy" alt="Dashboard of bike sales project" style="display: block; margin-left: 0; margin-right: auto; width: 80%; color:white; border: 3px solid #FEDA77">
+                      </div>
                     </div>
                 </div>
-                
             </div>
             
             <div v-else-if="html == true">
                 <h1 class="title is-1 has-text-light has-text-centered fade-in"><br>Websites</h1>
-                <div class="columns is-mobile">
-                    <div class="column has-text-right is-half">
+                <div class="container">
+                    <div class="row">
+                      <div class="col-md-6 has-text-right">
                         <a class="is-size-4 has-text-warning has-text-centered is-underlined has-text-weight-bold" target=”_blank” href="https://github.com/sabrinafogel/CruzCards">
-                                <span>CruzCards: Flashcard Service</span>
+                            <span>CruzCards: Flashcard Service</span>
                         </a>
                         <p class="is-size-5 has-text-light">
                             Course Project (2023)
@@ -391,16 +420,18 @@
                             our Scrum board/other documentation was an excellent
                             experience, and I am very proud of our end result!
                         </p>
-                    </div>
-                    <div class="column is-half">
-                        <img src="images/cruzcards.png" alt="CruzCards website screenshot" style="display: block; margin-left: 0; margin-right: auto; width: 80%; color:white; border: 3px solid #FEDA77">
+                      </div>
+                      <div class="col-md-6">
+                        <img src="images/cruzcards.png" loading="lazy" alt="CruzCards website screenshot" style="display: block; margin-left: 0; margin-right: auto; width: 80%; color:white; border: 3px solid #FEDA77">
+                      </div>
                     </div>
                 </div>
-                
-                <div class="columns is-mobile">
-                    <div class="column has-text-right is-half">
+                <br>
+                <div class="container">
+                    <div class="row">
+                      <div class="col-md-6 has-text-right">
                         <a class="is-size-4 has-text-warning has-text-centered is-underlined has-text-weight-bold" target=”_blank” href="https://github.com/tkj02/Nutrition">
-                                <span>Nutrition Visualizer</span>
+                            <span>Nutrition Visualizer</span>
                         </a>
                         <p class="is-size-5 has-text-light">
                             Course Project (2023)
@@ -427,16 +458,18 @@
                             assisted each other with our tasks and enhanced
                             features as seen fit.
                         </p>
-                    </div>
-                    <div class="column is-half">
-                        <img src="images/nutrition.png" alt="Nutrition website screenshot" style="display: block; margin-left: 0; margin-right: auto; width: 80%; color:white; border: 3px solid #FEDA77">
+                      </div>
+                      <div class="col-md-6">
+                        <img src="images/nutrition.png" loading="lazy" alt="Nutrition website screenshot" style="display: block; margin-left: 0; margin-right: auto; width: 80%; color:white; border: 3px solid #FEDA77">
+                      </div>
                     </div>
                 </div>
-                
-                <div class="columns is-mobile">
-                    <div class="column has-text-right is-half">
+                <br>
+                <div class="container">
+                    <div class="row">
+                      <div class="col-md-6 has-text-right">
                         <a class="is-size-4 has-text-warning has-text-centered is-underlined has-text-weight-bold" target=”_blank” href="https://github.com/NickJanes/ConstellationMapping">
-                                <span>Starscape: Constellation Mapping</span>
+                            <span>Starscape: Constellation Mapping</span>
                         </a>
                         <p class="is-size-5 has-text-light">
                             Course Project (2022)
@@ -461,120 +494,158 @@
                             I also wrote the majority of the text seen on the
                             page and made the latitude markings along the map.
                         </p>
-                    </div>
-                    <div class="column is-half">
-                        <img src="images/starscape.png" alt="Starscape website screenshot" style="display: block; margin-left: 0; margin-right: auto; width: 80%; color:white; border: 3px solid #FEDA77">
+                      </div>
+                      <div class="col-md-6">
+                        <img src="images/starscape.png" loading="lazy" alt="Starscape website screenshot" style="display: block; margin-left: 0; margin-right: auto; width: 80%; color:white; border: 3px solid #FEDA77">
+                      </div>
                     </div>
                 </div>
             </div>
             
             <div v-else-if="certificates == true">
                 <h1 class="title is-1 has-text-light has-text-centered fade-in"><br>Certificates</h1>
-                <h5 class="subtitle has-text-light has-text-centered">
+                <div class="subtitle has-text-light has-text-centered">
                     <br>
-                    <div class="columns is-mobile">
-                        <div class="column has-text-right">
+                    <div class="container">
+                        <div class="row justify-content-evenly">
+                          <div class="col-md-4 has-text-right">
                             <p class="has-text-light">2024</p>
+                          </div>
+                          <div class="col-md-4">
+                            Transportation Data Science Project (NSDC)
+                            <p style="font-size:15px">
+                                ---------<br>
+                                Matplotlib<br>Pandas<br>Seaborn</p>
+                          </div>
+                          <div class="col-md-4 has-text-left">
+                            <a class="button is-warning has-text-centered" target=”_blank” href="https://github.com/tkj02/Analytics_Projects/blob/main/Transportation%20Data%20Science%20Project%20(NSDC)/Certificate%20of%20Completion.pdf">
+                                <span class="icon"><i class="fa fa-w fa-check"></i></span>
+                                <span>Certificate</span>
+                            </a>
+                          </div>
                         </div>
-                        <div class="column">
+                    </div>
+                    <br>
+                    <div class="container">
+                        <div class="row justify-content-evenly">
+                          <div class="col-md-4 has-text-right">
+                            <p class="has-text-light">2024</p>
+                          </div>
+                          <div class="col-md-4">
                             Introduction to Data Analysis Using Excel
                             <p style="font-size:15px">
                                 ------------<br>
                                 Pivot Tables<br>VLOOKUP<br>Charts</p>
-                        </div>
-                        <div class="column has-text-left">
+                          </div>
+                          <div class="col-md-4 has-text-left">
                             <a class="button is-warning has-text-centered" target=”_blank” href="https://www.coursera.org/account/accomplishments/certificate/S5JXC4WTFASX">
                                 <span class="icon"><i class="fa fa-w fa-check"></i></span>
                                 <span>Certificate</span>
                             </a>
+                          </div>
                         </div>
                     </div>
-                    <div class="columns is-mobile">
-                        <div class="column has-text-right">
-                            <p class="is-size-5 has-text-light">2023</p>
-                        </div>
-                        <div class="column">
+                    <br>
+                    <div class="container">
+                        <div class="row justify-content-evenly">
+                          <div class="col-md-4 has-text-right">
+                            <p class="has-text-light">2023</p>
+                          </div>
+                          <div class="col-md-4">
                             Scripting with Python and SQL<br>for Data Engineering
                             <p style="font-size:15px">
                                ----------------<br>
                                 Data Structures<br>Web Scraping<br>Queries</p>
-                        </div>
-                        <div class="column has-text-left">
+                          </div>
+                          <div class="col-md-4 has-text-left">
                             <a class="button is-warning has-text-centered" target=”_blank” href="https://www.coursera.org/account/accomplishments/certificate/YJYKTUDQTKBK">
                                 <span class="icon"><i class="fa fa-w fa-check"></i></span>
                                 <span>Certificate</span>
                             </a>
+                          </div>
                         </div>
                     </div>
-                    <div class="columns is-mobile">
-                        <div class="column has-text-right">
-                            <p class="is-size-5 has-text-light">2023</p>
-                        </div>
-                        <div class="column">
+                    <br>
+                    <div class="container">
+                        <div class="row justify-content-evenly">
+                          <div class="col-md-4 has-text-right">
+                            <p class="has-text-light">2023</p>
+                          </div>
+                          <div class="col-md-4">
                             Data Analysis in Python
                             <p style="font-size:15px">
                                 ------------<br>
                                 SciKit-Learn<br>Pandas<br>NumPy<br>SciPy</p>
-                        </div>
-                        <div class="column has-text-left">
+                          </div>
+                          <div class="col-md-4 has-text-left">
                             <a class="button is-warning has-text-centered" target=”_blank” href="https://www.coursera.org/account/accomplishments/certificate/3VH9YBUTZYBX">
                                 <span class="icon"><i class="fa fa-w fa-check"></i></span>
                                 <span>Certificate</span>
                             </a>
+                          </div>
                         </div>
                     </div>
-                    <div class="columns is-mobile">
-                        <div class="column has-text-right">
-                            <p class="is-size-5 has-text-light">2022</p>
-                        </div>
-                        <div class="column">
+                    <br>
+                    <div class="container">
+                        <div class="row justify-content-evenly">
+                          <div class="col-md-4 has-text-right">
+                            <p class="has-text-light">2022</p>
+                          </div>
+                          <div class="col-md-4">
                             Programming Fundamentals (C)
                             <p style="font-size:15px">
                                 ----------<br>
                                 Algorithms<br>Types</p>
-                        </div>
-                        <div class="column has-text-left">
+                          </div>
+                          <div class="col-md-4 has-text-left">
                             <a class="button is-warning has-text-centered" target=”_blank” href="https://www.coursera.org/account/accomplishments/certificate/W3NNTADNJ6GV">
                                 <span class="icon"><i class="fa fa-w fa-check"></i></span>
                                 <span>Certificate</span>
                             </a>
+                          </div>
                         </div>
                     </div>
-                    <div class="columns is-mobile">
-                        <div class="column has-text-right">
-                            <p class="is-size-5 has-text-light">2022</p>
-                        </div>
-                        <div class="column">
+                    <br>
+                    <div class="container">
+                        <div class="row justify-content-evenly">
+                          <div class="col-md-4 has-text-right">
+                            <p class="has-text-light">2022</p>
+                          </div>
+                          <div class="col-md-4">
                             Introduction to Genomic Technologies
                             <p style="font-size:15px">
                                 -----------------<br>
                                 Molecular Biology<br>Statistics</p>
-                        </div>
-                        <div class="column has-text-left">
+                          </div>
+                          <div class="col-md-4 has-text-left">
                             <a class="button is-warning has-text-centered" target=”_blank” href="https://www.coursera.org/account/accomplishments/certificate/BLNAKHALH9SY">
                                 <span class="icon"><i class="fa fa-w fa-check"></i></span>
                                 <span>Certificate</span>
                             </a>
+                          </div>
                         </div>
                     </div>
-                    <div class="columns is-mobile">
-                        <div class="column has-text-right">
-                            <p class="is-size-5 has-text-light">2021</p>
-                        </div>
-                        <div class="column">
+                    <br>
+                    <div class="container">
+                        <div class="row justify-content-evenly">
+                          <div class="col-md-4 has-text-right">
+                            <p class="has-text-light">2021</p>
+                          </div>
+                          <div class="col-md-4">
                             SQL for Data Science
                             <p style="font-size:15px">
                                 ---------<br>
                                 Aggregate<br>Filter<br>Join<br>Sort</p>
-                        </div>
-                        <div class="column has-text-left">
+                          </div>
+                          <div class="col-md-4 has-text-left">
                             <a class="button is-warning has-text-centered" target=”_blank” href="https://www.coursera.org/account/accomplishments/certificate/T3VSE5L84WV4">
                                 <span class="icon"><i class="fa fa-w fa-check"></i></span>
                                 <span>Certificate</span>
                             </a>
+                          </div>
                         </div>
                     </div>
-                </h5>
+                </div>
             </div>
         </div>
     </head>

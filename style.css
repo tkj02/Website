@@ -1,6 +1,21 @@
-@media (max-width: 1024px){
-    #navbar{
-        background-color: #FEDA77;
-    }
+.bg-yellow{
+    background-color: #FEDA77;
 }
 
+.navbar-item{
+    background-color: #FEDA77;
+    text-decoration: none;
+}
+
+.navbar-link{
+    text-decoration: none;
+}
+
+.navbar-dropdown{
+    background-color: #FEDA77;
+}
+
+
+.button{
+    text-decoration: none;
+}
