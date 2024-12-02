@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en" class="has-background-dark">
+<html lang="en" class="bg-dark">
     
     <head>
         <!-- Meta info -->
@@ -51,9 +51,15 @@
             </nav>
         
             <div v-if="home == true">
-                
-                <h1 class="title is-1 has-text-light has-text-centered has-text-weight-bold"><br>Hi, I'm Teresa</h1>
-                
+                <br>
+
+                <div class="title custom-margin has-text-light has-text-weight-bold">
+                    Hi, I'm&nbsp;
+                    <transition name="fade">
+                        <p class="fade-item" v-if="textArray[currentIndex]" :key="textArray[currentIndex]">{{ textArray[currentIndex] }}</p>
+                    </transition>
+                </div>
+
                 <h2 class="subtitle has-text-light has-text-centered">
                     <br>UCSC Grad (Computer Science &amp; Bioinformatics)
                     <br>Passionate about SWE, DA/DS, &amp; Web Development
@@ -79,9 +85,7 @@
                     </a>
                     <br>
                 </div>
-
                 <img src="images/pfp.png" loading="lazy" alt="Profile picture" class="center" style="display: block; margin-left: auto; margin-right: auto; width: 30%; border: 3px solid #FEDA77; border-radius: 50%; color:white">
-
                 <h3 class="subtitle has-text-light has-text-centered">
                     <br>Thanks for visiting my website!
                     <br>Feel free to reach out anytime :)

@@ -15,7 +15,44 @@
     background-color: #FEDA77;
 }
 
-
 .button{
     text-decoration: none;
+}
+
+.fade-item {
+    color:aquamarine;
+    display: inline-block;
+    position: absolute;
+    justify-content: right;
+}
+
+.fade-enter-active, .fade-leave-active {
+    transition: opacity 0.5s ease;
+    opacity: 0;
+}
+
+.fade-enter, .fade-leave-to {
+    opacity: 0;
+}
+
+.custom-margin {
+    margin-left: 35vw;
+}
+
+@media (min-width: 1024px) {
+    .custom-margin {
+        margin-left: 35vw;
+    }
+}
+
+@media (min-width: 1440px) {
+    .custom-margin {
+        margin-left: 40vw;
+    }
+}
+
+@media (min-width: 2560px) {
+    .custom-margin {
+        margin-left: 44vw;
+    }
 }

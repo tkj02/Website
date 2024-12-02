@@ -6,7 +6,9 @@ let init = (app) => {
         experience: false,
         analytics: false,
         html: false,
-        certificates: false
+        certificates: false,
+        textArray: ['Teresa Joseph', 'a SW engineer', 'a data analyst', 'a web developer'],
+        currentIndex: 0
     };
     
     app.methods = {
@@ -48,6 +50,11 @@ let init = (app) => {
             app.data.analytics = false;
             app.data.html = false;
             app.data.certificates = true;
+        },
+
+        nextString() {
+            this.currentIndex = (this.currentIndex + 1) % this.textArray.length;
+          }
         }
     };
     
@@ -55,10 +62,11 @@ let init = (app) => {
         app.vue = new Vue({
             el: "#vue-target",
             data: app.data,
-            methods: app.methods
+            methods: app.methods,
+            created() {
+                setInterval(this.nextString, 3000);
+              }
         });
     }
-
-};
     
 init(app);
