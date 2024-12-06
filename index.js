@@ -18,6 +18,7 @@ let init = (app) => {
             app.data.analytics = false;
             app.data.html = false;
             app.data.certificates = false;
+            app.data.currentIndex = 0;
         },
 
         experience_button: function(){
@@ -64,7 +65,7 @@ let init = (app) => {
             data: app.data,
             methods: app.methods,
             created() {
-                setInterval(this.nextString, 3000);
+                setInterval(this.nextString, 2500);
               }
         });
     }
