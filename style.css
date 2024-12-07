@@ -1,49 +1,59 @@
+:root {
+    --main-yellow: #FEDA77;
+    --hover-yellow: #FCE8AE;
+    --white: #F5F5F5;
+    --pop-color: #D177FE;
+    --hover-pop-color: #E1AFFC;
+    --text-gray: #363636;
+    --black: #21252B;
+  }
+
 .section{
     padding: 0%;
     margin: 0%;
-    padding-bottom: 3%;
+    padding-bottom: 5%;
+    background-color: var(--black);
 }
 
 .intro {
     /* to update margin with calc */
     margin-right: 15vw;
-    color: #f5f5f5;
+    padding-top: 1cm;
+    color: var(--white);
     font-weight: bold;
     font-size: xx-large;
     text-align: center;
 }
 
 .title{
-    color: #f5f5f5;
+    color: var(--white);
     text-align: center;
+    padding-top: 1cm;
+    padding-bottom: 1cm;
 }
 
 .subtitle{
-    color: #f5f5f5;
+    color: var(--white);
     text-align: center;
 }
 
 .navbar{
-    background-color: #FEDA77;
-    justify-content: center !important;
+    background-color: var(--main-yellow);
+    justify-content: center;
 }
 
 .navbar-item{
-    background-color: #FEDA77;
+    background-color: var(--main-yellow);
     text-decoration: none;
+    color: var(--text-gray) !important;
+}
+
+.navbar-item:hover{
+    background-color: var(--hover-yellow) !important;
 }
 
 .navbar-link{
-    background-color: red;
     text-decoration: none;
-}
-
-.navbar-link{
-    text-decoration: none;
-}
-
-.navbar-dropdown{
-    background-color: #FEDA77;
 }
 
 .profile_pic{
@@ -51,28 +61,36 @@
     margin-left: auto; 
     margin-right: auto;
     width: 30%; 
-    border: 3px solid #FEDA77; 
+    border: 3px solid var(--main-yellow); 
     border-radius: 50%;
 }
 
 .button{
     text-decoration: none;
-    background-color: #FEDA77;
+    background-color: var(--pop-color);
     border: 0;
 }
 
+.button:hover{
+    background-color: var(--hover-pop-color) !important;
+}
+
 .project-text{
-    color: #f5f5f5;
+    color: var(--white);
     margin-left: auto;
     margin-right: 0;
     width: 80%"
 }
 
 .project-name{
-    color: #FEDA77;
+    color: var(--pop-color);
     font-size: 1.5rem;
     text-decoration: underline;
     font-weight: bold;
+}
+
+.project-name:hover{
+    color: var(--hover-pop-color);
 }
 
 .project-image{
@@ -80,26 +98,34 @@
     margin-left: 0;
     margin-right: auto;
     width: 80%;
-    border: 3px solid #FEDA77;
+    border: 3px solid var(--pop-color);
 }
 
 .links{
-    color: #FEDA77;
+    color: var(--pop-color);
     text-decoration: underline;
 }
 
+.links:hover{
+    color: var(--hover-pop-color);
+}
+
 .right-col-text{
-    color: #f5f5f5;
+    color: var(--white);
     font-size: 1.25rem;
 }
 
-.experience-title{
+.experience-intro{
     font-size: 1.25rem;
     font-weight: bold;
 }
 
+.experience-intro .experience-title{
+    color: var(--pop-color);
+}
+
 .experience-text{
-    color: #f5f5f5;
+    color: var(--white);
     font-size: 1rem;
 }
 
@@ -108,7 +134,7 @@
 }
 
 .fade-item {
-    color:aquamarine;
+    color: var(--pop-color);
     display: inline-block;
     position: absolute;
 }
