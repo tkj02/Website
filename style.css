@@ -2,34 +2,38 @@
     --main-yellow: #FEDA77;
     --hover-yellow: #FCE8AE;
     --white: #F5F5F5;
-    --pop-color: #D177FE;
-    --hover-pop-color: #E1AFFC;
+    --pop-color: #C6AAE9;
+    --hover-pop-color: #cbb9e6;
     --text-gray: #363636;
     --black: #21252B;
   }
 
-.section{
-    padding: 0%;
-    margin: 0%;
-    padding-bottom: 5%;
+html, body{
     background-color: var(--black);
 }
 
-.intro {
-    /* to update margin with calc */
-    margin-right: 15vw;
-    padding-top: 1cm;
+.section{
+    margin: 0%;
+    padding: 0% 0% 5% 0%;
+}
+
+.intro{
     color: var(--white);
     font-weight: bold;
     font-size: xx-large;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5cm;
+    margin-bottom: 0.5cm;
 }
+
 
 .title{
     color: var(--white);
     text-align: center;
-    padding-top: 1cm;
-    padding-bottom: 1cm;
+    margin-top: 0.5cm;
+    margin-bottom: 0.5cm;
 }
 
 .subtitle{
@@ -74,6 +78,32 @@
 .button:hover{
     background-color: var(--hover-pop-color) !important;
 }
+
+#experience-table{
+    color: var(--white);
+    border-collapse: collapse;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#experience-table td, #experience-table th {
+    border: 1px solid var(--white);
+    padding: 8px;
+}
+
+#column-header{
+    background-color: var(--pop-color);
+    font-weight: bold;
+    font-size: large;
+}
+
+tr:nth-child(even) {
+    color: var(--black);
+    background-color: var(--hover-pop-color);
+}
+
+.container{}
 
 .project-text{
     color: var(--white);
@@ -135,8 +165,8 @@
 
 .fade-item {
     color: var(--pop-color);
-    display: inline-block;
     position: absolute;
+    margin-top: 2cm;
 }
 
 .fade-enter-active, .fade-leave-active {
@@ -146,22 +176,4 @@
 
 .fade-enter, .fade-leave-to {
     opacity: 0;
-}
-
-@media (min-width: 1024px) {
-    .custom-margin {
-        margin-left: 35vw;
-    }
-}
-
-@media (min-width: 1440px) {
-    .custom-margin {
-        margin-left: 40vw;
-    }
-}
-
-@media (min-width: 2560px) {
-    .custom-margin {
-        margin-left: 44vw;
-    }
 }

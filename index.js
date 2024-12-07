@@ -7,7 +7,7 @@ let init = (app) => {
         analytics: false,
         html: false,
         certificates: false,
-        textArray: ['Teresa Joseph', 'a SW engineer', 'a data analyst', 'a web developer'],
+        textArray: ['Teresa Joseph', 'a software engineer', 'a data analyst', 'a web developer'],
         currentIndex: 0
     };
     

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en" class="section">
+<html lang="en">
     
     <head>
       <!-- Meta info -->
@@ -46,10 +46,10 @@
         
             <div v-if="home == true">
                 <div class="intro">
-                    Hi, I'm&nbsp;
-                    <transition name="fade">
-                        <p class="fade-item" v-if="textArray[currentIndex]" :key="textArray[currentIndex]">{{ textArray[currentIndex] }}</p>
-                    </transition>
+                  <p>Hello, I'm</p>
+                  <transition name="fade">
+                    <p class="fade-item" v-if="textArray[currentIndex]" :key="textArray[currentIndex]">{{ textArray[currentIndex] }}</p>
+                  </transition>
                 </div>
 
                 <h2 class="subtitle">
@@ -59,23 +59,18 @@
                 </h2>
 
                 <div class="buttons is-centered">
-                    <a class="button" target=”_blank” href="mailto:josephkteresa@gmail.com">
-                        <span class="icon"><i class="fa fa-fw fa-envelope"></i></span>
-                        <span>Email</span>
-                    </a>
-                    <a class="button" target=”_blank” href="https://github.com/tkj02">
-                        <span class="icon"><i class="fa fa-fw fa-brands fa-github"></i></span>
-                        <span>GitHub</span>
-                    </a>
-                    <a class="button" target=”_blank” href="https://www.linkedin.com/in/teresa-joseph/">
-                        <span class="icon"><i class="fa fa-fw fa-brands fa-linkedin"></i></span>
-                        <span>LinkedIn</span>
-                    </a>
-                    <a class="button" target=”_blank” href="https://public.tableau.com/app/profile/tjoseph/vizzes">
-                        <span class="icon"><i class="fa fa-fw fa-table"></i></span>
-                        <span>Tableau</span>
-                    </a>
-                    <br>
+                  <a class="button" target=”_blank” href="https://www.linkedin.com/in/teresa-joseph/">
+                    <span class="icon"><i class="fa fa-fw fa-brands fa-linkedin"></i></span>
+                    <span>LinkedIn</span>
+                  </a>
+                  <a class="button" target=”_blank” href="https://github.com/tkj02">
+                    <span class="icon"><i class="fa fa-fw fa-brands fa-github"></i></span>
+                    <span>GitHub</span>
+                  </a>
+                  <a class="button" target=”_blank” href="https://public.tableau.com/app/profile/tjoseph/vizzes">
+                    <span class="icon"><i class="fa fa-fw fa-table"></i></span>
+                    <span>Tableau</span>
+                  </a>
                 </div>
                 <img src="images/pfp.jpg" loading="lazy" alt="Profile picture" class="profile_pic">
                 <h3 class="subtitle">
@@ -85,168 +80,130 @@
             </div>
             
             <div v-else-if="experience == true">
-                <h1 class="title">Experience</h1>
-                <div class="subtitle">
-                    <div class="container">
-                        <div class="row justify-content-evenly">
-                          <div class="col-md-6 has-text-right">
-                            <p class="right-col-text">
-                                June 2024 - Present<br>
-                                (HTML, CSS, CMS, GIMP)
-                            </p>
-                          </div>
-                          <div class="col-md-6 has-text-left">
-                            <p class="experience-intro">
-                                <span class="experience-title">Website Populator<br></span>Golden Shovel Agency
-                            </p>
-                            <p class="experience-text">
-                                I create websites for clients in economic development and marketing,
-                                addressing accessibility concerns and improving search engine optimization
-                                through proper formatting, mindful styling, and quality metadata.
-                                I also conduct content research to enhance website quality
-                                and support admin requests to update existing sites as needed.
-                            </p>
-                          </div>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <div class="row">
-                          <div class="col-md-6 has-text-right">
-                            <p class="right-col-text">
-                                April 2023 - March 2024<br>
-                                (MATLAB, MIPS, R)
-                            </p>
-                          </div>
-                          <div class="col-md-6 has-text-left">
-                            <p class="experience-intro">
-                                <span class="experience-title">Course Reader<br></span>Baskin School of Engineering
-                            </p>
-                            <p class="experience-text">
-                                I was a reader for <br>
-                                &nbsp&nbsp&nbsp&nbsp• AM 147 &nbsp&nbsp&nbsp&nbsp(Computational Methods and Applications)<br>
-                                &nbsp&nbsp&nbsp&nbsp• CSE 102 &nbsp&nbsp&nbsp(Analysis of Algorithms)<br>
-                                &nbsp&nbsp&nbsp&nbsp• CSE 107 &nbsp&nbsp&nbsp(Probability and Statistics for Engineers)<br>
-                                &nbsp&nbsp&nbsp&nbsp• CSE 120 &nbsp&nbsp&nbsp(Computer Architecture)<br>
-                                &nbsp&nbsp&nbsp&nbsp• STAT 80A (Gaming and Gambling)<br>
-                                &nbsp&nbsp&nbsp&nbsp• STAT 132 &nbsp(Classical and Bayesian Inference)<br><br>
-                                
-                                Across all courses, I evaluated over 700 statistical
-                                and analytical problems as well as programs in MATLAB,
-                                MIPS, and R. For all evaluations, I shared thoughtful
-                                feedback with high accuracy and speed. I also managed
-                                the confidential academic information of over 300
-                                students in an online database, regularly updating
-                                and verifying data. On demand, I also collaborated with
-                                my colleagues to create and review rubrics.
-                            </p>
-                          </div>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <div class="row">
-                          <div class="col-md-6 has-text-right">
-                            <p class="right-col-text">
-                                July 2023 - September 2023<br>
-                                (Excel, Python)
-                            </p>
-                          </div>
-                          <div class="col-md-6 has-text-left">
-                            <p class="experience-intro">
-                                <span class="experience-title">Research Assistant<br></span>UCSC Economics Department
-                            </p>
-                            <p class="experience-text">
-                                I collected and assessed data from over 175 banks
-                                around the world to further our understanding of
-                                foreign exchange rates and their impact on cash flow.
-                                My focus was on Austria, Canada, Sweden,
-                                Switzerland, and Denmark. Using Excel, I pulled and
-                                organized data from financial reports. I met with other
-                                researchers to share and discuss our findings weekly.
-                                My contributions helped expedite the research team's
-                                paper's intended publication date.
-                            </p>
-                          </div>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <div class="row">
-                          <div class="col-md-6 has-text-right">
-                            <p class="right-col-text">
-                                January 2022 - March 2023<br>
-                                (Python, Canvas)
-                            </p>
-                          </div>
-                          <div class="col-md-6 has-text-left">
-                            <p class="experience-intro">
-                                <span class="experience-title">Course Tutor<br></span>Baskin School of Engineering
-                            </p>
-                            <p class="experience-text">
-                                I directed over 250 hours of one-on-one tutoring
-                                sessions where I assisted beginner programers by debugging
-                                their Python code, explaining programming concepts,
-                                and conducting demonstrations. I assited over 100
-                                students and tracked their progress on course mastery
-                                through follow-up discussions as needed. I exhibited
-                                exceptional time management to help as many people
-                                as possible as well as flexibility in being frequently
-                                available outside of office hours. While this role was
-                                exhausting at times, I found it very rewarding to give
-                                back to my community. I was in these students' shoes
-                                early in my academic career, so I know very well that
-                                having the right guidance on can make a huge difference.
-                                I truly enjoyed having a meaningful, positive impact on
-                                these students, and I am honored that I could be a part
-                                of their academic journeys.
-                            </p>
-                          </div>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <div class="row">
-                          <div class="col-md-6 has-text-right">
-                            <p class="right-col-text">
-                                June 2022 - August 2022<br>
-                                (C#, ASP.NET Core, Excel)
-                            </p>
-                          </div>
-                          <div class="col-md-6 has-text-left">
-                            <p class="experience-intro">
-                                <span class="experience-title">Backend Developer Intern<br></span>SkyIT Services
-                            </p>
-                            <p class="experience-text">
-                                I wrote, reviewed, and documented over 300 lines of C#
-                                code for the development of a mobile application that would
-                                allow users to track their flights. I also fetched and
-                                organized confidential data from the Federal Aviation
-                                Administration. In semiweekly sprint meetings, I mediated
-                                feedback and collaborated with other developers from
-                                different teams and backgrounds.
-                            </p>
-                          </div>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <div class="row">
-                          <div class="col-md-6 has-text-right">
-                            <p class="right-col-text">
-                                September - December 2021, 2022<br>
-                                (Google Suite)
-                            </p>
-                          </div>
-                          <div class="col-md-6 has-text-left">
-                            <p class="experience-intro">
-                                <span class="experience-title">Peer Notetaker<br></span>UCSC Disability Resources Center
-                            </p>
-                            <p class="experience-text">
-                                I created detailed study guides for<br>
-                                &nbsp&nbsp&nbsp&nbsp• CSE 102 &nbsp(Analysis of Algorithms)<br>
-                                &nbsp&nbsp&nbsp&nbsp• STAT 131 (Introduction to Probability Theory)<br>
-                                I also facilitated a few study sessions.
-                            </p>
-                          </div>
-                        </div>
-                    </div>
-                </div>
+              <h1 class="title">Experience</h1>
+              <table id="experience-table">
+                <tr id="column-header">
+                  <th>Role</th>
+                  <th>Company</th>
+                  <th>Skills</th>
+                  <th>Duration</th>
+                </tr>
+                <tr>
+                  <td>Website Populator</td>
+                  <td>Golden Shovel Agency</td>
+                  <td>HTML, CSS, CMS, GIMP</td>
+                  <td>June 2024 - Present</td>
+                </tr>
+                <tr>
+                  <td colspan="4">
+                    I create the structure and layout of websites for clients in economic development,
+                    addressing accessibility concerns and improving search engine optimization
+                    through proper formatting, mindful styling, and quality metadata.<br><br>
+                    I also conduct content research to enhance website quality, support admin requests
+                    to update existing sites, and update the content management system.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Course Reader</td>
+                  <td>Baskin School of Engineering</td>
+                  <td>MATLAB, MIPS, R</td>
+                  <td>April 2023 - March 2024</td>
+                </tr>
+                <tr>
+                  <td colspan="4">
+                    I was a reader for <br>
+                    &nbsp&nbsp&nbsp&nbsp• AM 147 &nbsp&nbsp&nbsp&nbsp(Computational Methods and Applications)<br>
+                    &nbsp&nbsp&nbsp&nbsp• CSE 102 &nbsp&nbsp&nbsp(Analysis of Algorithms)<br>
+                    &nbsp&nbsp&nbsp&nbsp• CSE 107 &nbsp&nbsp&nbsp(Probability and Statistics for Engineers)<br>
+                    &nbsp&nbsp&nbsp&nbsp• CSE 120 &nbsp&nbsp&nbsp(Computer Architecture)<br>
+                    &nbsp&nbsp&nbsp&nbsp• STAT 80A (Gaming and Gambling)<br>
+                    &nbsp&nbsp&nbsp&nbsp• STAT 132 &nbsp(Classical and Bayesian Inference)<br><br>
+                    
+                    Across all courses, I evaluated over 700 statistical
+                    and analytical problems as well as programs in MATLAB,
+                    MIPS, and R. For all evaluations, I shared thoughtful
+                    feedback with high accuracy and speed.<br><br>
+                    I managed the confidential academic information of over 300
+                    students in an online database, regularly updating
+                    and verifying data. On demand, I also collaborated with
+                    my colleagues to create and review rubrics.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Research Assistant</td>
+                  <td>UCSC Economics Department</td>
+                  <td>Excel, Python</td>
+                  <td>July 2023 - September 2023</td>
+                </tr>
+                <tr>
+                  <td colspan="4">
+                    I collected and assessed data from over 175 banks
+                    around the world to further our understanding of
+                    foreign exchange rates and their impact on cash flow.
+                    My focus was on Austria, Canada, Sweden, Switzerland, and Denmark.<br><br>
+                    Using Excel, I pulled and organized data from financial reports, navigating
+                    and documenting any missing/inconsistent data according to team policy.
+                    I met with other researchers to share and discuss our findings weekly.<br><br>
+                    My contributions helped expedite the research team's
+                    paper's intended publication date.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Course Tutor</td>
+                  <td>Baskin School of Engineering</td>
+                  <td>Python, Canvas</td>
+                  <td>January 2022 - March 2023</td>
+                </tr>
+                <tr>
+                  <td colspan="4">
+                    I directed over 250 hours of one-on-one tutoring
+                    sessions where I assisted beginner programers by debugging
+                    their Python code, explaining programming concepts,
+                    and conducting live demonstrations. I assited over 100
+                    students and tracked their progress on course mastery
+                    through follow-up discussions as needed.<br><br>
+                    I exhibited exceptional time management to help as many people
+                    as possible as well as flexibility in being frequently
+                    available outside of office hours.<br><br>
+                    While this role was demanding at times,
+                    I found it very rewarding to give back to my community.
+                    I truly enjoyed having a meaningful, positive impact on
+                    my peers, and I am honored that I could be a part
+                    of their academic journeys!
+                  </td>
+                </tr>
+                <tr>
+                  <td>Backend Developer Intern</td>
+                  <td>SkyIT Services</td>
+                  <td>C#, ASP.NET Core, Excel</td>
+                  <td>June 2022 - August 2022</td>
+                </tr>
+                <tr>
+                  <td colspan="4">
+                    I wrote, reviewed, and documented over 300 lines of C# code
+                    for the development of a mobile application that would allow
+                    users to track their flights. I also fetched and organized
+                    confidential data from the Federal Aviation Administration.<br><br>
+                    In semiweekly sprint meetings, I mediated feedback and
+                    collaborated with other developers from different teams and backgrounds.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Peer Notetaker</td>
+                  <td>UCSC Disability Resource Center</td>
+                  <td>Google Suite</td>
+                  <td>September - December 2021, 2022</td>
+                </tr>
+                <tr>
+                  <td colspan="4">
+                    I created detailed notes and study guides for<br>
+                    &nbsp&nbsp&nbsp&nbsp• CSE 102 &nbsp(Analysis of Algorithms)<br>
+                    &nbsp&nbsp&nbsp&nbsp• STAT 131 (Introduction to Probability Theory)<br><br>
+                    I ensured my work was consistently legible, organized, and delivered on time.<br><br>
+                    These notes and guides were used by my peers to prepare for assignments and exams.
+                  </td>
+                </tr>
+              </table>
             </div>
             
             <div v-else-if="analytics == true">
@@ -496,145 +453,146 @@
             <div v-else-if="certificates == true">
                 <h1 class="title">Certificates</h1>
                 <div class="subtitle">
-                    <div class="container">
-                        <div class="row justify-content-evenly">
-                          <div class="col-md-4 has-text-right">
-                            <p class="has-text-light">2024</p>
-                          </div>
-                          <div class="col-md-4">
-                            Transportation Data Science Project (NSDC)
-                            <p class="certificate-skills">
-                                ---------<br>
-                                Matplotlib<br>Pandas<br>Seaborn</p>
-                          </div>
-                          <div class="col-md-4 has-text-left">
-                            <a class="button" target=”_blank” href="https://github.com/tkj02/Analytics_Projects/blob/main/Transportation%20Data%20Science%20Project%20(NSDC)/Certificate%20of%20Completion.pdf">
-                                <span class="icon"><i class="fa fa-w fa-check"></i></span>
-                                <span>Certificate</span>
-                            </a>
-                          </div>
-                        </div>
+                  <br>
+                  <div class="container">
+                    <div class="row justify-content-evenly">
+                      <div class="col-md-4 has-text-right">
+                        <p class="has-text-light">2024</p>
+                      </div>
+                      <div class="col-md-4">
+                        Transportation Data Science Project (NSDC)
+                        <p class="certificate-skills">
+                            ---------<br>
+                            Matplotlib<br>Pandas<br>Seaborn</p>
+                      </div>
+                      <div class="col-md-4 has-text-left">
+                        <a class="button" target=”_blank” href="https://github.com/tkj02/Analytics_Projects/blob/main/Transportation%20Data%20Science%20Project%20(NSDC)/Certificate%20of%20Completion.pdf">
+                            <span class="icon"><i class="fa fa-w fa-check"></i></span>
+                            <span>Certificate</span>
+                        </a>
+                      </div>
                     </div>
-                    <br>
-                    <div class="container">
-                        <div class="row justify-content-evenly">
-                          <div class="col-md-4 has-text-right">
-                            <p class="has-text-light">2024</p>
-                          </div>
-                          <div class="col-md-4">
-                            Introduction to Data Analysis Using Excel
-                            <p class="certificate-skills">
-                                ------------<br>
-                                Pivot Tables<br>VLOOKUP<br>Charts</p>
-                          </div>
-                          <div class="col-md-4 has-text-left">
-                            <a class="button" target=”_blank” href="https://www.coursera.org/account/accomplishments/certificate/S5JXC4WTFASX">
-                                <span class="icon"><i class="fa fa-w fa-check"></i></span>
-                                <span>Certificate</span>
-                            </a>
-                          </div>
-                        </div>
+                  </div>
+                  <br>
+                  <div class="container">
+                    <div class="row justify-content-evenly">
+                      <div class="col-md-4 has-text-right">
+                        <p class="has-text-light">2024</p>
+                      </div>
+                      <div class="col-md-4">
+                        Introduction to Data Analysis Using Excel
+                        <p class="certificate-skills">
+                            ------------<br>
+                            Pivot Tables<br>VLOOKUP<br>Charts</p>
+                      </div>
+                      <div class="col-md-4 has-text-left">
+                        <a class="button" target=”_blank” href="https://www.coursera.org/account/accomplishments/certificate/S5JXC4WTFASX">
+                            <span class="icon"><i class="fa fa-w fa-check"></i></span>
+                            <span>Certificate</span>
+                        </a>
+                      </div>
                     </div>
-                    <br>
-                    <div class="container">
-                        <div class="row justify-content-evenly">
-                          <div class="col-md-4 has-text-right">
-                            <p class="has-text-light">2023</p>
-                          </div>
-                          <div class="col-md-4">
-                            Scripting with Python and SQL<br>for Data Engineering
-                            <p class="certificate-skills">
-                               ----------------<br>
-                                Data Structures<br>Web Scraping<br>Queries</p>
-                          </div>
-                          <div class="col-md-4 has-text-left">
-                            <a class="button" target=”_blank” href="https://www.coursera.org/account/accomplishments/certificate/YJYKTUDQTKBK">
-                                <span class="icon"><i class="fa fa-w fa-check"></i></span>
-                                <span>Certificate</span>
-                            </a>
-                          </div>
-                        </div>
+                  </div>
+                  <br>
+                  <div class="container">
+                    <div class="row justify-content-evenly">
+                      <div class="col-md-4 has-text-right">
+                        <p class="has-text-light">2023</p>
+                      </div>
+                      <div class="col-md-4">
+                        Scripting with Python and SQL<br>for Data Engineering
+                        <p class="certificate-skills">
+                            ----------------<br>
+                            Data Structures<br>Web Scraping<br>Queries</p>
+                      </div>
+                      <div class="col-md-4 has-text-left">
+                        <a class="button" target=”_blank” href="https://www.coursera.org/account/accomplishments/certificate/YJYKTUDQTKBK">
+                            <span class="icon"><i class="fa fa-w fa-check"></i></span>
+                            <span>Certificate</span>
+                        </a>
+                      </div>
                     </div>
-                    <br>
-                    <div class="container">
-                        <div class="row justify-content-evenly">
-                          <div class="col-md-4 has-text-right">
-                            <p class="has-text-light">2023</p>
-                          </div>
-                          <div class="col-md-4">
-                            Data Analysis in Python
-                            <p class="certificate-skills">
-                                ------------<br>
-                                SciKit-Learn<br>Pandas<br>NumPy<br>SciPy</p>
-                          </div>
-                          <div class="col-md-4 has-text-left">
-                            <a class="button" target=”_blank” href="https://www.coursera.org/account/accomplishments/certificate/3VH9YBUTZYBX">
-                                <span class="icon"><i class="fa fa-w fa-check"></i></span>
-                                <span>Certificate</span>
-                            </a>
-                          </div>
-                        </div>
+                  </div>
+                  <br>
+                  <div class="container">
+                    <div class="row justify-content-evenly">
+                      <div class="col-md-4 has-text-right">
+                        <p class="has-text-light">2023</p>
+                      </div>
+                      <div class="col-md-4">
+                        Data Analysis in Python
+                        <p class="certificate-skills">
+                            ------------<br>
+                            SciKit-Learn<br>Pandas<br>NumPy<br>SciPy</p>
+                      </div>
+                      <div class="col-md-4 has-text-left">
+                        <a class="button" target=”_blank” href="https://www.coursera.org/account/accomplishments/certificate/3VH9YBUTZYBX">
+                            <span class="icon"><i class="fa fa-w fa-check"></i></span>
+                            <span>Certificate</span>
+                        </a>
+                      </div>
                     </div>
-                    <br>
-                    <div class="container">
-                        <div class="row justify-content-evenly">
-                          <div class="col-md-4 has-text-right">
-                            <p class="has-text-light">2022</p>
-                          </div>
-                          <div class="col-md-4">
-                            Programming Fundamentals (C)
-                            <p class="certificate-skills">
-                                ----------<br>
-                                Algorithms<br>Types</p>
-                          </div>
-                          <div class="col-md-4 has-text-left">
-                            <a class="button" target=”_blank” href="https://www.coursera.org/account/accomplishments/certificate/W3NNTADNJ6GV">
-                                <span class="icon"><i class="fa fa-w fa-check"></i></span>
-                                <span>Certificate</span>
-                            </a>
-                          </div>
-                        </div>
+                  </div>
+                  <br>
+                  <div class="container">
+                    <div class="row justify-content-evenly">
+                      <div class="col-md-4 has-text-right">
+                        <p class="has-text-light">2022</p>
+                      </div>
+                      <div class="col-md-4">
+                        Programming Fundamentals (C)
+                        <p class="certificate-skills">
+                            ----------<br>
+                            Algorithms<br>Types</p>
+                      </div>
+                      <div class="col-md-4 has-text-left">
+                        <a class="button" target=”_blank” href="https://www.coursera.org/account/accomplishments/certificate/W3NNTADNJ6GV">
+                            <span class="icon"><i class="fa fa-w fa-check"></i></span>
+                            <span>Certificate</span>
+                        </a>
+                      </div>
                     </div>
-                    <br>
-                    <div class="container">
-                        <div class="row justify-content-evenly">
-                          <div class="col-md-4 has-text-right">
-                            <p class="has-text-light">2022</p>
-                          </div>
-                          <div class="col-md-4">
-                            Introduction to Genomic Technologies
-                            <p class="certificate-skills">
-                                -----------------<br>
-                                Molecular Biology<br>Statistics</p>
-                          </div>
-                          <div class="col-md-4 has-text-left">
-                            <a class="button" target=”_blank” href="https://www.coursera.org/account/accomplishments/certificate/BLNAKHALH9SY">
-                                <span class="icon"><i class="fa fa-w fa-check"></i></span>
-                                <span>Certificate</span>
-                            </a>
-                          </div>
-                        </div>
+                  </div>
+                  <br>
+                  <div class="container">
+                    <div class="row justify-content-evenly">
+                      <div class="col-md-4 has-text-right">
+                        <p class="has-text-light">2022</p>
+                      </div>
+                      <div class="col-md-4">
+                        Introduction to Genomic Technologies
+                        <p class="certificate-skills">
+                            -----------------<br>
+                            Molecular Biology<br>Statistics</p>
+                      </div>
+                      <div class="col-md-4 has-text-left">
+                        <a class="button" target=”_blank” href="https://www.coursera.org/account/accomplishments/certificate/BLNAKHALH9SY">
+                            <span class="icon"><i class="fa fa-w fa-check"></i></span>
+                            <span>Certificate</span>
+                        </a>
+                      </div>
                     </div>
-                    <br>
-                    <div class="container">
-                        <div class="row justify-content-evenly">
-                          <div class="col-md-4 has-text-right">
-                            <p class="has-text-light">2021</p>
-                          </div>
-                          <div class="col-md-4">
-                            SQL for Data Science
-                            <p class="certificate-skills">
-                                ---------<br>
-                                Aggregate<br>Filter<br>Join<br>Sort</p>
-                          </div>
-                          <div class="col-md-4 has-text-left">
-                            <a class="button" target=”_blank” href="https://www.coursera.org/account/accomplishments/certificate/T3VSE5L84WV4">
-                                <span class="icon"><i class="fa fa-w fa-check"></i></span>
-                                <span>Certificate</span>
-                            </a>
-                          </div>
-                        </div>
+                  </div>
+                  <br>
+                  <div class="container">
+                    <div class="row justify-content-evenly">
+                      <div class="col-md-4 has-text-right">
+                        <p class="has-text-light">2021</p>
+                      </div>
+                      <div class="col-md-4">
+                        SQL for Data Science
+                        <p class="certificate-skills">
+                            ---------<br>
+                            Aggregate<br>Filter<br>Join<br>Sort</p>
+                      </div>
+                      <div class="col-md-4 has-text-left">
+                        <a class="button" target=”_blank” href="https://www.coursera.org/account/accomplishments/certificate/T3VSE5L84WV4">
+                            <span class="icon"><i class="fa fa-w fa-check"></i></span>
+                            <span>Certificate</span>
+                        </a>
+                      </div>
                     </div>
+                  </div>
                 </div>
             </div>
         </div>
