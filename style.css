@@ -2,8 +2,8 @@
     --main-yellow: #FEDA77;
     --hover-yellow: #FCE8AE;
     --white: #F5F5F5;
-    --pop-color: #C6AAE9;
-    --hover-pop-color: #cbb9e6;
+    --pop-color: #6fd8a7;
+    --hover-pop-color: #93e2bd;
     --text-gray: #363636;
     --black: #21252B;
   }
@@ -64,7 +64,7 @@ html, body{
     display: block;
     margin-left: auto; 
     margin-right: auto;
-    width: 30%; 
+    width: 25%; 
     border: 3px solid var(--main-yellow); 
     border-radius: 50%;
 }
@@ -89,18 +89,26 @@ html, body{
 
 #experience-table td, #experience-table th {
     border: 1px solid var(--white);
-    padding: 8px;
-    text-align: center;
+    padding: 15px;
+    text-align: left;
 }
 
 #experience-table tr:nth-child(even) {
     color: var(--black);
     background-color: var(--hover-pop-color);
-    text-align: right !important;
+}
+
+#experience-table li{
+    color: var(--white);
+    list-style: disc;
+}
+
+#experience-table a{
+    color: var(--hover-pop-color);
 }
 
 #column-header{
-    background-color: var(--pop-color);
+    background-color: var(--white);
     font-weight: bold;
     font-size: large;
 }
